@@ -174,6 +174,8 @@ with beget_openapi_cloud.ApiClient(configuration) as api_client:
             preset_name="preset_name_example",
             save_pma_password=True,
         ),
+        extra="extra_example",
+        region="region_example",
     )
     try:
         api_response = api_instance.cloud_service_create(
