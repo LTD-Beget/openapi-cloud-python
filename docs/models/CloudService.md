@@ -18,6 +18,8 @@ Key | Input Type | Accessed Type | Description | Notes
 **price_month** | decimal.Decimal, int, float,  | decimal.Decimal,  |  | [optional] value must be a 64 bit float
 **mysql5** | [**MysqlMysql5**](MysqlMysql5.md) | [**MysqlMysql5**](MysqlMysql5.md) |  | [optional] 
 **mysql8** | [**MysqlMysql8**](MysqlMysql8.md) | [**MysqlMysql8**](MysqlMysql8.md) |  | [optional] 
+**postgresql15** | [**PostgresqlPostgresql15**](PostgresqlPostgresql15.md) | [**PostgresqlPostgresql15**](PostgresqlPostgresql15.md) |  | [optional] 
+**postgresql14** | [**PostgresqlPostgresql14**](PostgresqlPostgresql14.md) | [**PostgresqlPostgresql14**](PostgresqlPostgresql14.md) |  | [optional] 
 **manage_enabled** | bool,  | BoolClass,  |  | [optional] 
 **slug** | str,  | str,  |  | [optional] 
 **[monitorable_resources](#monitorable_resources)** | list, tuple,  | tuple,  |  | [optional] 

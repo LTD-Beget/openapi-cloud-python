@@ -171,8 +171,13 @@ with beget_openapi_cloud.ApiClient(configuration) as api_client:
             param=dict(
                 "key": "key_example",
             ),
-            preset_name="preset_name_example",
             save_pma_password=True,
+        ),
+        postgresql_params=PostgresqlPgCreateParams(
+            db_name="db_name_example",
+            role_name="role_name_example",
+            password="password_example",
+            param=dict(),
         ),
         extra="extra_example",
         region="region_example",

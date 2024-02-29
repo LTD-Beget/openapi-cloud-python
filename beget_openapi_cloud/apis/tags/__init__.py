@@ -9,3 +9,5 @@ class TagValues(str, enum.Enum):
     CLOUD_SERVICE = "CloudService"
     MYSQL_SERVICE = "MysqlService"
     MYSQL_STATISTIC_SERVICE = "MysqlStatisticService"
+    POSTGRESQL_SERVICE = "PostgresqlService"
+    POSTGRESQL_STATISTIC_SERVICE = "PostgresqlStatisticService"

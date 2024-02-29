@@ -842,7 +842,6 @@ with beget_openapi_cloud.ApiClient(configuration) as api_client:
         param=dict(
             "key": "key_example",
         ),
-        preset_name="preset_name_example",
     )
     try:
         api_response = api_instance.mysql_service_set_config(
