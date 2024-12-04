@@ -7,7 +7,10 @@ import enum
 
 class TagValues(str, enum.Enum):
     CLOUD_SERVICE = "CloudService"
+    MYSQL_BACKUP_SERVICE = "MysqlBackupService"
     MYSQL_SERVICE = "MysqlService"
     MYSQL_STATISTIC_SERVICE = "MysqlStatisticService"
+    POSTGRESQL_BACKUP_SERVICE = "PostgresqlBackupService"
     POSTGRESQL_SERVICE = "PostgresqlService"
     POSTGRESQL_STATISTIC_SERVICE = "PostgresqlStatisticService"
+    S3SERVICE = "S3Service"

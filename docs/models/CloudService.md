@@ -18,14 +18,18 @@ Key | Input Type | Accessed Type | Description | Notes
 **price_month** | decimal.Decimal, int, float,  | decimal.Decimal,  |  | [optional] value must be a 64 bit float
 **mysql5** | [**MysqlMysql5**](MysqlMysql5.md) | [**MysqlMysql5**](MysqlMysql5.md) |  | [optional] 
 **mysql8** | [**MysqlMysql8**](MysqlMysql8.md) | [**MysqlMysql8**](MysqlMysql8.md) |  | [optional] 
+**mysql84** | [**MysqlMysql84**](MysqlMysql84.md) | [**MysqlMysql84**](MysqlMysql84.md) |  | [optional] 
 **postgresql15** | [**PostgresqlPostgresql15**](PostgresqlPostgresql15.md) | [**PostgresqlPostgresql15**](PostgresqlPostgresql15.md) |  | [optional] 
 **postgresql14** | [**PostgresqlPostgresql14**](PostgresqlPostgresql14.md) | [**PostgresqlPostgresql14**](PostgresqlPostgresql14.md) |  | [optional] 
+**postgresql164** | [**PostgresqlPostgresql164**](PostgresqlPostgresql164.md) | [**PostgresqlPostgresql164**](PostgresqlPostgresql164.md) |  | [optional] 
+**s3** | [**S3S3**](S3S3.md) | [**S3S3**](S3S3.md) |  | [optional] 
 **manage_enabled** | bool,  | BoolClass,  |  | [optional] 
 **slug** | str,  | str,  |  | [optional] 
 **[monitorable_resources](#monitorable_resources)** | list, tuple,  | tuple,  |  | [optional] 
 **unblocking** | bool,  | BoolClass,  |  | [optional] 
 **migrating** | bool,  | BoolClass,  |  | [optional] 
 **region** | str,  | str,  |  | [optional] 
+**type** | str,  | str,  |  | [optional] must be one of ["MYSQL5", "MYSQL8", "MYSQL84", "POSTGRESQL14", "POSTGRESQL15", "S_3", "POSTGRESQL164", ] 
 **any_string_name** | dict, frozendict.frozendict, str, date, datetime, int, float, bool, decimal.Decimal, None, list, tuple, bytes, io.FileIO, io.BufferedReader | frozendict.frozendict, str, BoolClass, decimal.Decimal, NoneClass, tuple, bytes, FileIO | any string name can be used but the value must be the correct type | [optional]
 
 # monitorable_resources

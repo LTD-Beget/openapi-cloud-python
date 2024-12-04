@@ -179,6 +179,10 @@ with beget_openapi_cloud.ApiClient(configuration) as api_client:
             password="password_example",
             param=dict(),
         ),
+        s3_params=S3S3CreateParams(
+            public=True,
+            bucket_name="bucket_name_example",
+        ),
         extra="extra_example",
         region="region_example",
     )

@@ -3,6 +3,9 @@ import typing_extensions
 from beget_openapi_cloud.paths import PathValues
 from beget_openapi_cloud.apis.paths.v1_cloud import V1Cloud
 from beget_openapi_cloud.apis.paths.v1_cloud_configuration import V1CloudConfiguration
+from beget_openapi_cloud.apis.paths.v1_cloud_mysql_backup import V1CloudMysqlBackup
+from beget_openapi_cloud.apis.paths.v1_cloud_mysql_backup_orders import V1CloudMysqlBackupOrders
+from beget_openapi_cloud.apis.paths.v1_cloud_mysql_backup_copy_id import V1CloudMysqlBackupCopyId
 from beget_openapi_cloud.apis.paths.v1_cloud_mysql_service_id_config import V1CloudMysqlServiceIdConfig
 from beget_openapi_cloud.apis.paths.v1_cloud_mysql_service_id_db import V1CloudMysqlServiceIdDb
 from beget_openapi_cloud.apis.paths.v1_cloud_mysql_service_id_db_db_name import V1CloudMysqlServiceIdDbDbName
@@ -15,6 +18,9 @@ from beget_openapi_cloud.apis.paths.v1_cloud_mysql_service_id_statistic_disk_usa
 from beget_openapi_cloud.apis.paths.v1_cloud_mysql_service_id_statistic_load_average import V1CloudMysqlServiceIdStatisticLoadAverage
 from beget_openapi_cloud.apis.paths.v1_cloud_mysql_service_id_statistic_memory import V1CloudMysqlServiceIdStatisticMemory
 from beget_openapi_cloud.apis.paths.v1_cloud_mysql_service_id_statistic_network import V1CloudMysqlServiceIdStatisticNetwork
+from beget_openapi_cloud.apis.paths.v1_cloud_postgresql_backup import V1CloudPostgresqlBackup
+from beget_openapi_cloud.apis.paths.v1_cloud_postgresql_backup_orders import V1CloudPostgresqlBackupOrders
+from beget_openapi_cloud.apis.paths.v1_cloud_postgresql_backup_copy_id import V1CloudPostgresqlBackupCopyId
 from beget_openapi_cloud.apis.paths.v1_cloud_postgresql_service_id_config import V1CloudPostgresqlServiceIdConfig
 from beget_openapi_cloud.apis.paths.v1_cloud_postgresql_service_id_db import V1CloudPostgresqlServiceIdDb
 from beget_openapi_cloud.apis.paths.v1_cloud_postgresql_service_id_db_db_name import V1CloudPostgresqlServiceIdDbDbName
@@ -28,6 +34,13 @@ from beget_openapi_cloud.apis.paths.v1_cloud_postgresql_service_id_statistic_dis
 from beget_openapi_cloud.apis.paths.v1_cloud_postgresql_service_id_statistic_load_average import V1CloudPostgresqlServiceIdStatisticLoadAverage
 from beget_openapi_cloud.apis.paths.v1_cloud_postgresql_service_id_statistic_memory import V1CloudPostgresqlServiceIdStatisticMemory
 from beget_openapi_cloud.apis.paths.v1_cloud_postgresql_service_id_statistic_network import V1CloudPostgresqlServiceIdStatisticNetwork
+from beget_openapi_cloud.apis.paths.v1_cloud_s3_prefix import V1CloudS3Prefix
+from beget_openapi_cloud.apis.paths.v1_cloud_s3_price import V1CloudS3Price
+from beget_openapi_cloud.apis.paths.v1_cloud_s3_quota import V1CloudS3Quota
+from beget_openapi_cloud.apis.paths.v1_cloud_s3_service_id_access_key import V1CloudS3ServiceIdAccessKey
+from beget_openapi_cloud.apis.paths.v1_cloud_s3_service_id_cors import V1CloudS3ServiceIdCors
+from beget_openapi_cloud.apis.paths.v1_cloud_s3_service_id_domain import V1CloudS3ServiceIdDomain
+from beget_openapi_cloud.apis.paths.v1_cloud_s3_service_id_public import V1CloudS3ServiceIdPublic
 from beget_openapi_cloud.apis.paths.v1_cloud_service_id import V1CloudServiceId
 from beget_openapi_cloud.apis.paths.v1_cloud_service_id_configuration import V1CloudServiceIdConfiguration
 
@@ -36,6 +49,9 @@ PathToApi = typing_extensions.TypedDict(
     {
         PathValues.V1_CLOUD: V1Cloud,
         PathValues.V1_CLOUD_CONFIGURATION: V1CloudConfiguration,
+        PathValues.V1_CLOUD_MYSQL_BACKUP: V1CloudMysqlBackup,
+        PathValues.V1_CLOUD_MYSQL_BACKUP_ORDERS: V1CloudMysqlBackupOrders,
+        PathValues.V1_CLOUD_MYSQL_BACKUP_COPY_ID: V1CloudMysqlBackupCopyId,
         PathValues.V1_CLOUD_MYSQL_SERVICE_ID_CONFIG: V1CloudMysqlServiceIdConfig,
         PathValues.V1_CLOUD_MYSQL_SERVICE_ID_DB: V1CloudMysqlServiceIdDb,
         PathValues.V1_CLOUD_MYSQL_SERVICE_ID_DB_DB_NAME: V1CloudMysqlServiceIdDbDbName,
@@ -48,6 +64,9 @@ PathToApi = typing_extensions.TypedDict(
         PathValues.V1_CLOUD_MYSQL_SERVICE_ID_STATISTIC_LOADAVERAGE: V1CloudMysqlServiceIdStatisticLoadAverage,
         PathValues.V1_CLOUD_MYSQL_SERVICE_ID_STATISTIC_MEMORY: V1CloudMysqlServiceIdStatisticMemory,
         PathValues.V1_CLOUD_MYSQL_SERVICE_ID_STATISTIC_NETWORK: V1CloudMysqlServiceIdStatisticNetwork,
+        PathValues.V1_CLOUD_POSTGRESQL_BACKUP: V1CloudPostgresqlBackup,
+        PathValues.V1_CLOUD_POSTGRESQL_BACKUP_ORDERS: V1CloudPostgresqlBackupOrders,
+        PathValues.V1_CLOUD_POSTGRESQL_BACKUP_COPY_ID: V1CloudPostgresqlBackupCopyId,
         PathValues.V1_CLOUD_POSTGRESQL_SERVICE_ID_CONFIG: V1CloudPostgresqlServiceIdConfig,
         PathValues.V1_CLOUD_POSTGRESQL_SERVICE_ID_DB: V1CloudPostgresqlServiceIdDb,
         PathValues.V1_CLOUD_POSTGRESQL_SERVICE_ID_DB_DB_NAME: V1CloudPostgresqlServiceIdDbDbName,
@@ -61,6 +80,13 @@ PathToApi = typing_extensions.TypedDict(
         PathValues.V1_CLOUD_POSTGRESQL_SERVICE_ID_STATISTIC_LOADAVERAGE: V1CloudPostgresqlServiceIdStatisticLoadAverage,
         PathValues.V1_CLOUD_POSTGRESQL_SERVICE_ID_STATISTIC_MEMORY: V1CloudPostgresqlServiceIdStatisticMemory,
         PathValues.V1_CLOUD_POSTGRESQL_SERVICE_ID_STATISTIC_NETWORK: V1CloudPostgresqlServiceIdStatisticNetwork,
+        PathValues.V1_CLOUD_S3_PREFIX: V1CloudS3Prefix,
+        PathValues.V1_CLOUD_S3_PRICE: V1CloudS3Price,
+        PathValues.V1_CLOUD_S3_QUOTA: V1CloudS3Quota,
+        PathValues.V1_CLOUD_S3_SERVICE_ID_ACCESSKEY: V1CloudS3ServiceIdAccessKey,
+        PathValues.V1_CLOUD_S3_SERVICE_ID_CORS: V1CloudS3ServiceIdCors,
+        PathValues.V1_CLOUD_S3_SERVICE_ID_DOMAIN: V1CloudS3ServiceIdDomain,
+        PathValues.V1_CLOUD_S3_SERVICE_ID_PUBLIC: V1CloudS3ServiceIdPublic,
         PathValues.V1_CLOUD_SERVICE_ID: V1CloudServiceId,
         PathValues.V1_CLOUD_SERVICE_ID_CONFIGURATION: V1CloudServiceIdConfiguration,
     }
@@ -70,6 +96,9 @@ path_to_api = PathToApi(
     {
         PathValues.V1_CLOUD: V1Cloud,
         PathValues.V1_CLOUD_CONFIGURATION: V1CloudConfiguration,
+        PathValues.V1_CLOUD_MYSQL_BACKUP: V1CloudMysqlBackup,
+        PathValues.V1_CLOUD_MYSQL_BACKUP_ORDERS: V1CloudMysqlBackupOrders,
+        PathValues.V1_CLOUD_MYSQL_BACKUP_COPY_ID: V1CloudMysqlBackupCopyId,
         PathValues.V1_CLOUD_MYSQL_SERVICE_ID_CONFIG: V1CloudMysqlServiceIdConfig,
         PathValues.V1_CLOUD_MYSQL_SERVICE_ID_DB: V1CloudMysqlServiceIdDb,
         PathValues.V1_CLOUD_MYSQL_SERVICE_ID_DB_DB_NAME: V1CloudMysqlServiceIdDbDbName,
@@ -82,6 +111,9 @@ path_to_api = PathToApi(
         PathValues.V1_CLOUD_MYSQL_SERVICE_ID_STATISTIC_LOADAVERAGE: V1CloudMysqlServiceIdStatisticLoadAverage,
         PathValues.V1_CLOUD_MYSQL_SERVICE_ID_STATISTIC_MEMORY: V1CloudMysqlServiceIdStatisticMemory,
         PathValues.V1_CLOUD_MYSQL_SERVICE_ID_STATISTIC_NETWORK: V1CloudMysqlServiceIdStatisticNetwork,
+        PathValues.V1_CLOUD_POSTGRESQL_BACKUP: V1CloudPostgresqlBackup,
+        PathValues.V1_CLOUD_POSTGRESQL_BACKUP_ORDERS: V1CloudPostgresqlBackupOrders,
+        PathValues.V1_CLOUD_POSTGRESQL_BACKUP_COPY_ID: V1CloudPostgresqlBackupCopyId,
         PathValues.V1_CLOUD_POSTGRESQL_SERVICE_ID_CONFIG: V1CloudPostgresqlServiceIdConfig,
         PathValues.V1_CLOUD_POSTGRESQL_SERVICE_ID_DB: V1CloudPostgresqlServiceIdDb,
         PathValues.V1_CLOUD_POSTGRESQL_SERVICE_ID_DB_DB_NAME: V1CloudPostgresqlServiceIdDbDbName,
@@ -95,6 +127,13 @@ path_to_api = PathToApi(
         PathValues.V1_CLOUD_POSTGRESQL_SERVICE_ID_STATISTIC_LOADAVERAGE: V1CloudPostgresqlServiceIdStatisticLoadAverage,
         PathValues.V1_CLOUD_POSTGRESQL_SERVICE_ID_STATISTIC_MEMORY: V1CloudPostgresqlServiceIdStatisticMemory,
         PathValues.V1_CLOUD_POSTGRESQL_SERVICE_ID_STATISTIC_NETWORK: V1CloudPostgresqlServiceIdStatisticNetwork,
+        PathValues.V1_CLOUD_S3_PREFIX: V1CloudS3Prefix,
+        PathValues.V1_CLOUD_S3_PRICE: V1CloudS3Price,
+        PathValues.V1_CLOUD_S3_QUOTA: V1CloudS3Quota,
+        PathValues.V1_CLOUD_S3_SERVICE_ID_ACCESSKEY: V1CloudS3ServiceIdAccessKey,
+        PathValues.V1_CLOUD_S3_SERVICE_ID_CORS: V1CloudS3ServiceIdCors,
+        PathValues.V1_CLOUD_S3_SERVICE_ID_DOMAIN: V1CloudS3ServiceIdDomain,
+        PathValues.V1_CLOUD_S3_SERVICE_ID_PUBLIC: V1CloudS3ServiceIdPublic,
         PathValues.V1_CLOUD_SERVICE_ID: V1CloudServiceId,
         PathValues.V1_CLOUD_SERVICE_ID_CONFIGURATION: V1CloudServiceIdConfiguration,
     }
