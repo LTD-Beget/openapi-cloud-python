@@ -10,7 +10,8 @@ Key | Input Type | Accessed Type | Description | Notes
 ------------ | ------------- | ------------- | ------------- | -------------
 **id** | decimal.Decimal, int,  | decimal.Decimal,  |  | [optional] 
 **[http_method](#http_method)** | list, tuple,  | tuple,  |  | [optional] 
-**[http_header](#http_header)** | list, tuple,  | tuple,  |  | [optional] 
+**[access_control_allow_headers](#access_control_allow_headers)** | list, tuple,  | tuple,  |  | [optional] 
+**[access_control_expose_headers](#access_control_expose_headers)** | list, tuple,  | tuple,  |  | [optional] 
 **cache_ttl** | str,  | str,  |  | [optional] 
 **fqdn** | str,  | str,  |  | [optional] 
 **any_string_name** | dict, frozendict.frozendict, str, date, datetime, int, float, bool, decimal.Decimal, None, list, tuple, bytes, io.FileIO, io.BufferedReader | frozendict.frozendict, str, BoolClass, decimal.Decimal, NoneClass, tuple, bytes, FileIO | any string name can be used but the value must be the correct type | [optional]
@@ -27,7 +28,19 @@ Class Name | Input Type | Accessed Type | Description | Notes
 ------------- | ------------- | ------------- | ------------- | -------------
 items | str,  | str,  |  | 
 
-# http_header
+# access_control_allow_headers
+
+## Model Type Info
+Input Type | Accessed Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+list, tuple,  | tuple,  |  | 
+
+### Tuple Items
+Class Name | Input Type | Accessed Type | Description | Notes
+------------- | ------------- | ------------- | ------------- | -------------
+items | str,  | str,  |  | 
+
+# access_control_expose_headers
 
 ## Model Type Info
 Input Type | Accessed Type | Description | Notes

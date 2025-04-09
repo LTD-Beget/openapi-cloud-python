@@ -40,7 +40,12 @@ from beget_openapi_cloud.apis.paths.v1_cloud_s3_quota import V1CloudS3Quota
 from beget_openapi_cloud.apis.paths.v1_cloud_s3_service_id_access_key import V1CloudS3ServiceIdAccessKey
 from beget_openapi_cloud.apis.paths.v1_cloud_s3_service_id_cors import V1CloudS3ServiceIdCors
 from beget_openapi_cloud.apis.paths.v1_cloud_s3_service_id_domain import V1CloudS3ServiceIdDomain
+from beget_openapi_cloud.apis.paths.v1_cloud_s3_service_id_enable_ftp import V1CloudS3ServiceIdEnableFtp
 from beget_openapi_cloud.apis.paths.v1_cloud_s3_service_id_public import V1CloudS3ServiceIdPublic
+from beget_openapi_cloud.apis.paths.v1_cloud_s3_service_id_statistic_count_request import V1CloudS3ServiceIdStatisticCountRequest
+from beget_openapi_cloud.apis.paths.v1_cloud_s3_service_id_statistic_network import V1CloudS3ServiceIdStatisticNetwork
+from beget_openapi_cloud.apis.paths.v1_cloud_s3_service_id_statistic_quota import V1CloudS3ServiceIdStatisticQuota
+from beget_openapi_cloud.apis.paths.v1_cloud_s3_service_id_statistic_traffic_usage import V1CloudS3ServiceIdStatisticTrafficUsage
 from beget_openapi_cloud.apis.paths.v1_cloud_service_id import V1CloudServiceId
 from beget_openapi_cloud.apis.paths.v1_cloud_service_id_configuration import V1CloudServiceIdConfiguration
 
@@ -86,7 +91,12 @@ PathToApi = typing_extensions.TypedDict(
         PathValues.V1_CLOUD_S3_SERVICE_ID_ACCESSKEY: V1CloudS3ServiceIdAccessKey,
         PathValues.V1_CLOUD_S3_SERVICE_ID_CORS: V1CloudS3ServiceIdCors,
         PathValues.V1_CLOUD_S3_SERVICE_ID_DOMAIN: V1CloudS3ServiceIdDomain,
+        PathValues.V1_CLOUD_S3_SERVICE_ID_ENABLEFTP: V1CloudS3ServiceIdEnableFtp,
         PathValues.V1_CLOUD_S3_SERVICE_ID_PUBLIC: V1CloudS3ServiceIdPublic,
+        PathValues.V1_CLOUD_S3_SERVICE_ID_STATISTIC_COUNTREQUEST: V1CloudS3ServiceIdStatisticCountRequest,
+        PathValues.V1_CLOUD_S3_SERVICE_ID_STATISTIC_NETWORK: V1CloudS3ServiceIdStatisticNetwork,
+        PathValues.V1_CLOUD_S3_SERVICE_ID_STATISTIC_QUOTA: V1CloudS3ServiceIdStatisticQuota,
+        PathValues.V1_CLOUD_S3_SERVICE_ID_STATISTIC_TRAFFICUSAGE: V1CloudS3ServiceIdStatisticTrafficUsage,
         PathValues.V1_CLOUD_SERVICE_ID: V1CloudServiceId,
         PathValues.V1_CLOUD_SERVICE_ID_CONFIGURATION: V1CloudServiceIdConfiguration,
     }
@@ -133,7 +143,12 @@ path_to_api = PathToApi(
         PathValues.V1_CLOUD_S3_SERVICE_ID_ACCESSKEY: V1CloudS3ServiceIdAccessKey,
         PathValues.V1_CLOUD_S3_SERVICE_ID_CORS: V1CloudS3ServiceIdCors,
         PathValues.V1_CLOUD_S3_SERVICE_ID_DOMAIN: V1CloudS3ServiceIdDomain,
+        PathValues.V1_CLOUD_S3_SERVICE_ID_ENABLEFTP: V1CloudS3ServiceIdEnableFtp,
         PathValues.V1_CLOUD_S3_SERVICE_ID_PUBLIC: V1CloudS3ServiceIdPublic,
+        PathValues.V1_CLOUD_S3_SERVICE_ID_STATISTIC_COUNTREQUEST: V1CloudS3ServiceIdStatisticCountRequest,
+        PathValues.V1_CLOUD_S3_SERVICE_ID_STATISTIC_NETWORK: V1CloudS3ServiceIdStatisticNetwork,
+        PathValues.V1_CLOUD_S3_SERVICE_ID_STATISTIC_QUOTA: V1CloudS3ServiceIdStatisticQuota,
+        PathValues.V1_CLOUD_S3_SERVICE_ID_STATISTIC_TRAFFICUSAGE: V1CloudS3ServiceIdStatisticTrafficUsage,
         PathValues.V1_CLOUD_SERVICE_ID: V1CloudServiceId,
         PathValues.V1_CLOUD_SERVICE_ID_CONFIGURATION: V1CloudServiceIdConfiguration,
     }

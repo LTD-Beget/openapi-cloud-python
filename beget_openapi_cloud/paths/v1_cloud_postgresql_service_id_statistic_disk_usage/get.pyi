@@ -54,6 +54,10 @@ class PeriodSchema(
     @schemas.classproperty
     def MONTH(cls):
         return cls("MONTH")
+    
+    @schemas.classproperty
+    def YEAR(cls):
+        return cls("YEAR")
 RequestRequiredQueryParams = typing_extensions.TypedDict(
     'RequestRequiredQueryParams',
     {

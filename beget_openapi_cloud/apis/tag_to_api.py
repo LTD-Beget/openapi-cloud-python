@@ -9,6 +9,7 @@ from beget_openapi_cloud.apis.tags.postgresql_backup_service_api import Postgres
 from beget_openapi_cloud.apis.tags.postgresql_service_api import PostgresqlServiceApi
 from beget_openapi_cloud.apis.tags.postgresql_statistic_service_api import PostgresqlStatisticServiceApi
 from beget_openapi_cloud.apis.tags.s3_service_api import S3ServiceApi
+from beget_openapi_cloud.apis.tags.s3_statistic_service_api import S3StatisticServiceApi
 
 TagToApi = typing_extensions.TypedDict(
     'TagToApi',
@@ -21,6 +22,7 @@ TagToApi = typing_extensions.TypedDict(
         TagValues.POSTGRESQL_SERVICE: PostgresqlServiceApi,
         TagValues.POSTGRESQL_STATISTIC_SERVICE: PostgresqlStatisticServiceApi,
         TagValues.S3SERVICE: S3ServiceApi,
+        TagValues.S3STATISTIC_SERVICE: S3StatisticServiceApi,
     }
 )
 
@@ -34,5 +36,6 @@ tag_to_api = TagToApi(
         TagValues.POSTGRESQL_SERVICE: PostgresqlServiceApi,
         TagValues.POSTGRESQL_STATISTIC_SERVICE: PostgresqlStatisticServiceApi,
         TagValues.S3SERVICE: S3ServiceApi,
+        TagValues.S3STATISTIC_SERVICE: S3StatisticServiceApi,
     }
 )

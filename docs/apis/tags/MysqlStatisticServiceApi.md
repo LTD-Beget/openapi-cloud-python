@@ -102,7 +102,7 @@ period | PeriodSchema | | optional
 ## Model Type Info
 Input Type | Accessed Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-str,  | str,  |  | must be one of ["UNKNOWN", "HOUR", "DAY", "WEEK", "MONTH", ] 
+str,  | str,  |  | must be one of ["UNKNOWN", "HOUR", "DAY", "WEEK", "MONTH", "YEAR", ] 
 
 ### path_params
 #### RequestPathParams
@@ -233,7 +233,7 @@ period | PeriodSchema | | optional
 ## Model Type Info
 Input Type | Accessed Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-str,  | str,  |  | must be one of ["UNKNOWN", "HOUR", "DAY", "WEEK", "MONTH", ] 
+str,  | str,  |  | must be one of ["UNKNOWN", "HOUR", "DAY", "WEEK", "MONTH", "YEAR", ] 
 
 ### path_params
 #### RequestPathParams
@@ -364,7 +364,7 @@ period | PeriodSchema | | optional
 ## Model Type Info
 Input Type | Accessed Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-str,  | str,  |  | must be one of ["UNKNOWN", "HOUR", "DAY", "WEEK", "MONTH", ] 
+str,  | str,  |  | must be one of ["UNKNOWN", "HOUR", "DAY", "WEEK", "MONTH", "YEAR", ] 
 
 ### path_params
 #### RequestPathParams
@@ -495,7 +495,7 @@ period | PeriodSchema | | optional
 ## Model Type Info
 Input Type | Accessed Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-str,  | str,  |  | must be one of ["UNKNOWN", "HOUR", "DAY", "WEEK", "MONTH", ] 
+str,  | str,  |  | must be one of ["UNKNOWN", "HOUR", "DAY", "WEEK", "MONTH", "YEAR", ] 
 
 ### path_params
 #### RequestPathParams
@@ -626,7 +626,7 @@ period | PeriodSchema | | optional
 ## Model Type Info
 Input Type | Accessed Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-str,  | str,  |  | must be one of ["UNKNOWN", "HOUR", "DAY", "WEEK", "MONTH", ] 
+str,  | str,  |  | must be one of ["UNKNOWN", "HOUR", "DAY", "WEEK", "MONTH", "YEAR", ] 
 
 ### path_params
 #### RequestPathParams
@@ -757,7 +757,7 @@ period | PeriodSchema | | optional
 ## Model Type Info
 Input Type | Accessed Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-str,  | str,  |  | must be one of ["UNKNOWN", "HOUR", "DAY", "WEEK", "MONTH", ] 
+str,  | str,  |  | must be one of ["UNKNOWN", "HOUR", "DAY", "WEEK", "MONTH", "YEAR", ] 
 
 ### path_params
 #### RequestPathParams
@@ -888,7 +888,7 @@ period | PeriodSchema | | optional
 ## Model Type Info
 Input Type | Accessed Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-str,  | str,  |  | must be one of ["UNKNOWN", "HOUR", "DAY", "WEEK", "MONTH", ] 
+str,  | str,  |  | must be one of ["UNKNOWN", "HOUR", "DAY", "WEEK", "MONTH", "YEAR", ] 
 
 ### path_params
 #### RequestPathParams
