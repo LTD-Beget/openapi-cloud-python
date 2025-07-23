@@ -138,6 +138,7 @@ from beget_openapi_cloud.model.s3_enable_ftp_response_error import S3EnableFtpRe
 from beget_openapi_cloud.model.s3_ftp import S3Ftp
 from beget_openapi_cloud.model.s3_get_prefix_response import S3GetPrefixResponse
 from beget_openapi_cloud.model.s3_get_price_response import S3GetPriceResponse
+from beget_openapi_cloud.model.s3_get_price_response_bucket import S3GetPriceResponseBucket
 from beget_openapi_cloud.model.s3_get_quota_response import S3GetQuotaResponse
 from beget_openapi_cloud.model.s3_s3 import S3S3
 from beget_openapi_cloud.model.s3_s3_configuration import S3S3Configuration
