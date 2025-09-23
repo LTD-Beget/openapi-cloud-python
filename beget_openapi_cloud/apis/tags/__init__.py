@@ -6,6 +6,8 @@ import enum
 
 
 class TagValues(str, enum.Enum):
+    CDN_SERVICE = "CdnService"
+    CDN_STATISTIC_SERVICE = "CdnStatisticService"
     CLOUD_SERVICE = "CloudService"
     MYSQL_BACKUP_SERVICE = "MysqlBackupService"
     MYSQL_SERVICE = "MysqlService"

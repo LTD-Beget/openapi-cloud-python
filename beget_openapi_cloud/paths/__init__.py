@@ -7,6 +7,16 @@ import enum
 
 class PathValues(str, enum.Enum):
     V1_CLOUD = "/v1/cloud"
+    V1_CLOUD_CDN_PRICE = "/v1/cloud/cdn/price"
+    V1_CLOUD_CDN_SOURCEDOMAINS = "/v1/cloud/cdn/source-domains"
+    V1_CLOUD_CDN_SERVICE_ID_PRELOADCACHEBYPATHS = "/v1/cloud/cdn/{service_id}/preload-cache-by-paths"
+    V1_CLOUD_CDN_SERVICE_ID_PURGEALLCACHE = "/v1/cloud/cdn/{service_id}/purge-all-cache"
+    V1_CLOUD_CDN_SERVICE_ID_PURGECACHEBYPATHS = "/v1/cloud/cdn/{service_id}/purge-cache-by-paths"
+    V1_CLOUD_CDN_SERVICE_ID_RESOURCEDOMAINS = "/v1/cloud/cdn/{service_id}/resource-domains"
+    V1_CLOUD_CDN_SERVICE_ID_SETTING = "/v1/cloud/cdn/{service_id}/setting"
+    V1_CLOUD_CDN_SERVICE_ID_STATISTIC_COUNTREQUEST = "/v1/cloud/cdn/{service_id}/statistic/count-request"
+    V1_CLOUD_CDN_SERVICE_ID_STATISTIC_NETWORK = "/v1/cloud/cdn/{service_id}/statistic/network"
+    V1_CLOUD_CDN_SERVICE_ID_STATISTIC_TRAFFICUSAGE = "/v1/cloud/cdn/{service_id}/statistic/traffic-usage"
     V1_CLOUD_CONFIGURATION = "/v1/cloud/configuration"
     V1_CLOUD_MYSQL_BACKUP = "/v1/cloud/mysql/backup"
     V1_CLOUD_MYSQL_BACKUP_ORDERS = "/v1/cloud/mysql/backup/orders"

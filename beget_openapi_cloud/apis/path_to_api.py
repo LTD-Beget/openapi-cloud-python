@@ -2,6 +2,16 @@ import typing_extensions
 
 from beget_openapi_cloud.paths import PathValues
 from beget_openapi_cloud.apis.paths.v1_cloud import V1Cloud
+from beget_openapi_cloud.apis.paths.v1_cloud_cdn_price import V1CloudCdnPrice
+from beget_openapi_cloud.apis.paths.v1_cloud_cdn_source_domains import V1CloudCdnSourceDomains
+from beget_openapi_cloud.apis.paths.v1_cloud_cdn_service_id_preload_cache_by_paths import V1CloudCdnServiceIdPreloadCacheByPaths
+from beget_openapi_cloud.apis.paths.v1_cloud_cdn_service_id_purge_all_cache import V1CloudCdnServiceIdPurgeAllCache
+from beget_openapi_cloud.apis.paths.v1_cloud_cdn_service_id_purge_cache_by_paths import V1CloudCdnServiceIdPurgeCacheByPaths
+from beget_openapi_cloud.apis.paths.v1_cloud_cdn_service_id_resource_domains import V1CloudCdnServiceIdResourceDomains
+from beget_openapi_cloud.apis.paths.v1_cloud_cdn_service_id_setting import V1CloudCdnServiceIdSetting
+from beget_openapi_cloud.apis.paths.v1_cloud_cdn_service_id_statistic_count_request import V1CloudCdnServiceIdStatisticCountRequest
+from beget_openapi_cloud.apis.paths.v1_cloud_cdn_service_id_statistic_network import V1CloudCdnServiceIdStatisticNetwork
+from beget_openapi_cloud.apis.paths.v1_cloud_cdn_service_id_statistic_traffic_usage import V1CloudCdnServiceIdStatisticTrafficUsage
 from beget_openapi_cloud.apis.paths.v1_cloud_configuration import V1CloudConfiguration
 from beget_openapi_cloud.apis.paths.v1_cloud_mysql_backup import V1CloudMysqlBackup
 from beget_openapi_cloud.apis.paths.v1_cloud_mysql_backup_orders import V1CloudMysqlBackupOrders
@@ -53,6 +63,16 @@ PathToApi = typing_extensions.TypedDict(
     'PathToApi',
     {
         PathValues.V1_CLOUD: V1Cloud,
+        PathValues.V1_CLOUD_CDN_PRICE: V1CloudCdnPrice,
+        PathValues.V1_CLOUD_CDN_SOURCEDOMAINS: V1CloudCdnSourceDomains,
+        PathValues.V1_CLOUD_CDN_SERVICE_ID_PRELOADCACHEBYPATHS: V1CloudCdnServiceIdPreloadCacheByPaths,
+        PathValues.V1_CLOUD_CDN_SERVICE_ID_PURGEALLCACHE: V1CloudCdnServiceIdPurgeAllCache,
+        PathValues.V1_CLOUD_CDN_SERVICE_ID_PURGECACHEBYPATHS: V1CloudCdnServiceIdPurgeCacheByPaths,
+        PathValues.V1_CLOUD_CDN_SERVICE_ID_RESOURCEDOMAINS: V1CloudCdnServiceIdResourceDomains,
+        PathValues.V1_CLOUD_CDN_SERVICE_ID_SETTING: V1CloudCdnServiceIdSetting,
+        PathValues.V1_CLOUD_CDN_SERVICE_ID_STATISTIC_COUNTREQUEST: V1CloudCdnServiceIdStatisticCountRequest,
+        PathValues.V1_CLOUD_CDN_SERVICE_ID_STATISTIC_NETWORK: V1CloudCdnServiceIdStatisticNetwork,
+        PathValues.V1_CLOUD_CDN_SERVICE_ID_STATISTIC_TRAFFICUSAGE: V1CloudCdnServiceIdStatisticTrafficUsage,
         PathValues.V1_CLOUD_CONFIGURATION: V1CloudConfiguration,
         PathValues.V1_CLOUD_MYSQL_BACKUP: V1CloudMysqlBackup,
         PathValues.V1_CLOUD_MYSQL_BACKUP_ORDERS: V1CloudMysqlBackupOrders,
@@ -105,6 +125,16 @@ PathToApi = typing_extensions.TypedDict(
 path_to_api = PathToApi(
     {
         PathValues.V1_CLOUD: V1Cloud,
+        PathValues.V1_CLOUD_CDN_PRICE: V1CloudCdnPrice,
+        PathValues.V1_CLOUD_CDN_SOURCEDOMAINS: V1CloudCdnSourceDomains,
+        PathValues.V1_CLOUD_CDN_SERVICE_ID_PRELOADCACHEBYPATHS: V1CloudCdnServiceIdPreloadCacheByPaths,
+        PathValues.V1_CLOUD_CDN_SERVICE_ID_PURGEALLCACHE: V1CloudCdnServiceIdPurgeAllCache,
+        PathValues.V1_CLOUD_CDN_SERVICE_ID_PURGECACHEBYPATHS: V1CloudCdnServiceIdPurgeCacheByPaths,
+        PathValues.V1_CLOUD_CDN_SERVICE_ID_RESOURCEDOMAINS: V1CloudCdnServiceIdResourceDomains,
+        PathValues.V1_CLOUD_CDN_SERVICE_ID_SETTING: V1CloudCdnServiceIdSetting,
+        PathValues.V1_CLOUD_CDN_SERVICE_ID_STATISTIC_COUNTREQUEST: V1CloudCdnServiceIdStatisticCountRequest,
+        PathValues.V1_CLOUD_CDN_SERVICE_ID_STATISTIC_NETWORK: V1CloudCdnServiceIdStatisticNetwork,
+        PathValues.V1_CLOUD_CDN_SERVICE_ID_STATISTIC_TRAFFICUSAGE: V1CloudCdnServiceIdStatisticTrafficUsage,
         PathValues.V1_CLOUD_CONFIGURATION: V1CloudConfiguration,
         PathValues.V1_CLOUD_MYSQL_BACKUP: V1CloudMysqlBackup,
         PathValues.V1_CLOUD_MYSQL_BACKUP_ORDERS: V1CloudMysqlBackupOrders,

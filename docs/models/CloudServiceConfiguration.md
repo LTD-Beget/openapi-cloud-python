@@ -12,7 +12,7 @@ Key | Input Type | Accessed Type | Description | Notes
 **price_day** | decimal.Decimal, int, float,  | decimal.Decimal,  |  | [optional] value must be a 64 bit float
 **price_month** | decimal.Decimal, int, float,  | decimal.Decimal,  |  | [optional] value must be a 64 bit float
 **region** | str,  | str,  |  | [optional] 
-**type** | str,  | str,  |  | [optional] must be one of ["MYSQL5", "MYSQL8", "MYSQL84", "POSTGRESQL14", "POSTGRESQL15", "S_3", "POSTGRESQL164", ] 
+**type** | str,  | str,  |  | [optional] must be one of ["MYSQL5", "MYSQL8", "MYSQL84", "POSTGRESQL14", "POSTGRESQL15", "S_3", "POSTGRESQL164", "CDN", ] 
 **mysql5** | [**MysqlMysql5Configuration**](MysqlMysql5Configuration.md) | [**MysqlMysql5Configuration**](MysqlMysql5Configuration.md) |  | [optional] 
 **mysql8** | [**MysqlMysql8Configuration**](MysqlMysql8Configuration.md) | [**MysqlMysql8Configuration**](MysqlMysql8Configuration.md) |  | [optional] 
 **mysql84** | [**MysqlMysql84Configuration**](MysqlMysql84Configuration.md) | [**MysqlMysql84Configuration**](MysqlMysql84Configuration.md) |  | [optional] 

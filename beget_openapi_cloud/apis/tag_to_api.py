@@ -1,6 +1,8 @@
 import typing_extensions
 
 from beget_openapi_cloud.apis.tags import TagValues
+from beget_openapi_cloud.apis.tags.cdn_service_api import CdnServiceApi
+from beget_openapi_cloud.apis.tags.cdn_statistic_service_api import CdnStatisticServiceApi
 from beget_openapi_cloud.apis.tags.cloud_service_api import CloudServiceApi
 from beget_openapi_cloud.apis.tags.mysql_backup_service_api import MysqlBackupServiceApi
 from beget_openapi_cloud.apis.tags.mysql_service_api import MysqlServiceApi
@@ -14,6 +16,8 @@ from beget_openapi_cloud.apis.tags.s3_statistic_service_api import S3StatisticSe
 TagToApi = typing_extensions.TypedDict(
     'TagToApi',
     {
+        TagValues.CDN_SERVICE: CdnServiceApi,
+        TagValues.CDN_STATISTIC_SERVICE: CdnStatisticServiceApi,
         TagValues.CLOUD_SERVICE: CloudServiceApi,
         TagValues.MYSQL_BACKUP_SERVICE: MysqlBackupServiceApi,
         TagValues.MYSQL_SERVICE: MysqlServiceApi,
@@ -28,6 +32,8 @@ TagToApi = typing_extensions.TypedDict(
 
 tag_to_api = TagToApi(
     {
+        TagValues.CDN_SERVICE: CdnServiceApi,
+        TagValues.CDN_STATISTIC_SERVICE: CdnStatisticServiceApi,
         TagValues.CLOUD_SERVICE: CloudServiceApi,
         TagValues.MYSQL_BACKUP_SERVICE: MysqlBackupServiceApi,
         TagValues.MYSQL_SERVICE: MysqlServiceApi,

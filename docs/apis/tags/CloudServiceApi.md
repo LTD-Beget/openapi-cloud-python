@@ -183,6 +183,18 @@ with beget_openapi_cloud.ApiClient(configuration) as api_client:
             public=True,
             bucket_name="bucket_name_example",
         ),
+        cdn_params=CdnCdnCreateParams(
+            resource_domain=[
+                "resource_domain_example"
+            ],
+            source_domain=CdnSourceDomain(
+                cdn_service_id="cdn_service_id_example",
+                source_service_id="source_service_id_example",
+                source_service_type="DOMAIN",
+                domain="domain_example",
+            ),
+            settings=dict(),
+        ),
         extra="extra_example",
         region="region_example",
     )

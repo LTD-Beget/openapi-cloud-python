@@ -12,7 +12,8 @@ Key | Input Type | Accessed Type | Description | Notes
 **configuration_id** | str,  | str,  |  | [optional] 
 **display_name** | str,  | str,  |  | [optional] 
 **description** | str,  | str,  |  | [optional] 
-**status** | str,  | str,  |  | [optional] must be one of ["CREATING", "RUNNING", "RESTARTING", "STOPPED", "RECONFIGURING", ] 
+**status** | str,  | str,  |  | [optional] must be one of ["CREATING", "RUNNING", "RESTARTING", "STOPPED", "RECONFIGURING", "SUSPENDED", ] 
+**status_details** | str,  | str,  |  | [optional] must be one of ["_", "SUSPENDED_INSUFFICIENT_FUNDS", ] 
 **created_at** | str,  | str,  |  | [optional] 
 **price_day** | decimal.Decimal, int, float,  | decimal.Decimal,  |  | [optional] value must be a 64 bit float
 **price_month** | decimal.Decimal, int, float,  | decimal.Decimal,  |  | [optional] value must be a 64 bit float
@@ -23,13 +24,14 @@ Key | Input Type | Accessed Type | Description | Notes
 **postgresql14** | [**PostgresqlPostgresql14**](PostgresqlPostgresql14.md) | [**PostgresqlPostgresql14**](PostgresqlPostgresql14.md) |  | [optional] 
 **postgresql164** | [**PostgresqlPostgresql164**](PostgresqlPostgresql164.md) | [**PostgresqlPostgresql164**](PostgresqlPostgresql164.md) |  | [optional] 
 **s3** | [**S3S3**](S3S3.md) | [**S3S3**](S3S3.md) |  | [optional] 
+**cdn** | [**CdnCdn**](CdnCdn.md) | [**CdnCdn**](CdnCdn.md) |  | [optional] 
 **manage_enabled** | bool,  | BoolClass,  |  | [optional] 
 **slug** | str,  | str,  |  | [optional] 
 **[monitorable_resources](#monitorable_resources)** | list, tuple,  | tuple,  |  | [optional] 
 **unblocking** | bool,  | BoolClass,  |  | [optional] 
 **migrating** | bool,  | BoolClass,  |  | [optional] 
 **region** | str,  | str,  |  | [optional] 
-**type** | str,  | str,  |  | [optional] must be one of ["MYSQL5", "MYSQL8", "MYSQL84", "POSTGRESQL14", "POSTGRESQL15", "S_3", "POSTGRESQL164", ] 
+**type** | str,  | str,  |  | [optional] must be one of ["MYSQL5", "MYSQL8", "MYSQL84", "POSTGRESQL14", "POSTGRESQL15", "POSTGRESQL164", "S_3", "CDN", ] 
 **restoring** | bool,  | BoolClass,  |  | [optional] 
 **any_string_name** | dict, frozendict.frozendict, str, date, datetime, int, float, bool, decimal.Decimal, None, list, tuple, bytes, io.FileIO, io.BufferedReader | frozendict.frozendict, str, BoolClass, decimal.Decimal, NoneClass, tuple, bytes, FileIO | any string name can be used but the value must be the correct type | [optional]
 
