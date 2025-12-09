@@ -15,5 +15,6 @@ class TagValues(str, enum.Enum):
     POSTGRESQL_BACKUP_SERVICE = "PostgresqlBackupService"
     POSTGRESQL_SERVICE = "PostgresqlService"
     POSTGRESQL_STATISTIC_SERVICE = "PostgresqlStatisticService"
+    PROJECT_SERVICE = "ProjectService"
     S3SERVICE = "S3Service"
     S3STATISTIC_SERVICE = "S3StatisticService"

@@ -7,6 +7,8 @@ import enum
 
 class PathValues(str, enum.Enum):
     V1_CLOUD = "/v1/cloud"
+    V1_CLOUD_CDN_ISO3166COUNTRIES = "/v1/cloud/cdn/iso3166-countries"
+    V1_CLOUD_CDN_ISO3166REGIONS = "/v1/cloud/cdn/iso3166-regions"
     V1_CLOUD_CDN_PRICE = "/v1/cloud/cdn/price"
     V1_CLOUD_CDN_SOURCEDOMAINS = "/v1/cloud/cdn/source-domains"
     V1_CLOUD_CDN_SERVICE_ID_PRELOADCACHEBYPATHS = "/v1/cloud/cdn/{service_id}/preload-cache-by-paths"
@@ -49,6 +51,9 @@ class PathValues(str, enum.Enum):
     V1_CLOUD_POSTGRESQL_SERVICE_ID_STATISTIC_LOADAVERAGE = "/v1/cloud/postgresql/{service_id}/statistic/load-average"
     V1_CLOUD_POSTGRESQL_SERVICE_ID_STATISTIC_MEMORY = "/v1/cloud/postgresql/{service_id}/statistic/memory"
     V1_CLOUD_POSTGRESQL_SERVICE_ID_STATISTIC_NETWORK = "/v1/cloud/postgresql/{service_id}/statistic/network"
+    V1_CLOUD_PROJECTS = "/v1/cloud/projects"
+    V1_CLOUD_PROJECTS_LIST = "/v1/cloud/projects/list"
+    V1_CLOUD_PROJECTS_PROJECT_ID = "/v1/cloud/projects/{project_id}"
     V1_CLOUD_S3_PREFIX = "/v1/cloud/s3/prefix"
     V1_CLOUD_S3_PRICE = "/v1/cloud/s3/price"
     V1_CLOUD_S3_QUOTA = "/v1/cloud/s3/quota"
@@ -63,3 +68,5 @@ class PathValues(str, enum.Enum):
     V1_CLOUD_S3_SERVICE_ID_STATISTIC_TRAFFICUSAGE = "/v1/cloud/s3/{service_id}/statistic/traffic-usage"
     V1_CLOUD_SERVICE_ID = "/v1/cloud/{service_id}"
     V1_CLOUD_SERVICE_ID_CONFIGURATION = "/v1/cloud/{service_id}/configuration"
+    V1_CLOUD_SERVICE_ID_PIN = "/v1/cloud/{service_id}/pin"
+    V1_CLOUD_SERVICE_ID_PROJECT = "/v1/cloud/{service_id}/project"

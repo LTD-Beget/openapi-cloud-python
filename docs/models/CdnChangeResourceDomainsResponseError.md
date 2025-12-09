@@ -11,6 +11,7 @@ Key | Input Type | Accessed Type | Description | Notes
 **code** | str,  | str,  |  | [optional] must be one of ["_", "INTERNAL_ERROR", "DOMAIN_NOT_REGISTERED", "DOMAIN_INCORRECT_NS", "NOT_SUBDOMAIN", "DOMAIN_NOT_FOUND", "DOMAIN_ALREADY_USED", "DOMAIN_INVALID", ] 
 **message** | str,  | str,  |  | [optional] 
 **items** | str,  | str,  |  | [optional] 
+**domain_already_used_details** | [**CdnChangeResourceDomainsResponseErrorDomainAlreadyUsedDetails**](CdnChangeResourceDomainsResponseErrorDomainAlreadyUsedDetails.md) | [**CdnChangeResourceDomainsResponseErrorDomainAlreadyUsedDetails**](CdnChangeResourceDomainsResponseErrorDomainAlreadyUsedDetails.md) |  | [optional] 
 **any_string_name** | dict, frozendict.frozendict, str, date, datetime, int, float, bool, decimal.Decimal, None, list, tuple, bytes, io.FileIO, io.BufferedReader | frozendict.frozendict, str, BoolClass, decimal.Decimal, NoneClass, tuple, bytes, FileIO | any string name can be used but the value must be the correct type | [optional]
 
 [[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)

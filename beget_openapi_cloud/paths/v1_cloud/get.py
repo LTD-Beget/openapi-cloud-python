@@ -29,6 +29,85 @@ from beget_openapi_cloud.model.cloud_get_list_response import CloudGetListRespon
 
 from . import path
 
+# Query params
+OffsetSchema = schemas.Int32Schema
+LimitSchema = schemas.Int32Schema
+SortSchema = schemas.StrSchema
+FilterSchema = schemas.StrSchema
+
+
+class ViewSchema(
+    schemas.EnumBase,
+    schemas.StrSchema
+):
+
+
+    class MetaOapg:
+        format = 'enum'
+        enum_value_to_name = {
+            "SERVICE_VIEW_FULL": "FULL",
+            "SERVICE_VIEW_BASIC": "BASIC",
+        }
+    
+    @schemas.classproperty
+    def FULL(cls):
+        return cls("SERVICE_VIEW_FULL")
+    
+    @schemas.classproperty
+    def BASIC(cls):
+        return cls("SERVICE_VIEW_BASIC")
+RequestRequiredQueryParams = typing_extensions.TypedDict(
+    'RequestRequiredQueryParams',
+    {
+    }
+)
+RequestOptionalQueryParams = typing_extensions.TypedDict(
+    'RequestOptionalQueryParams',
+    {
+        'offset': typing.Union[OffsetSchema, decimal.Decimal, int, ],
+        'limit': typing.Union[LimitSchema, decimal.Decimal, int, ],
+        'sort': typing.Union[SortSchema, str, ],
+        'filter': typing.Union[FilterSchema, str, ],
+        'view': typing.Union[ViewSchema, str, ],
+    },
+    total=False
+)
+
+
+class RequestQueryParams(RequestRequiredQueryParams, RequestOptionalQueryParams):
+    pass
+
+
+request_query_offset = api_client.QueryParameter(
+    name="offset",
+    style=api_client.ParameterStyle.FORM,
+    schema=OffsetSchema,
+    explode=True,
+)
+request_query_limit = api_client.QueryParameter(
+    name="limit",
+    style=api_client.ParameterStyle.FORM,
+    schema=LimitSchema,
+    explode=True,
+)
+request_query_sort = api_client.QueryParameter(
+    name="sort",
+    style=api_client.ParameterStyle.FORM,
+    schema=SortSchema,
+    explode=True,
+)
+request_query_filter = api_client.QueryParameter(
+    name="filter",
+    style=api_client.ParameterStyle.FORM,
+    schema=FilterSchema,
+    explode=True,
+)
+request_query_view = api_client.QueryParameter(
+    name="view",
+    style=api_client.ParameterStyle.FORM,
+    schema=ViewSchema,
+    explode=True,
+)
 _auth = [
     'bearerAuth',
 ]
@@ -63,6 +142,7 @@ class BaseApi(api_client.Api):
     @typing.overload
     def _cloud_service_get_list_oapg(
         self,
+        query_params: RequestQueryParams = frozendict.frozendict(),
         accept_content_types: typing.Tuple[str] = _all_accept_content_types,
         stream: bool = False,
         timeout: typing.Optional[typing.Union[int, typing.Tuple]] = None,
@@ -75,6 +155,7 @@ class BaseApi(api_client.Api):
     def _cloud_service_get_list_oapg(
         self,
         skip_deserialization: typing_extensions.Literal[True],
+        query_params: RequestQueryParams = frozendict.frozendict(),
         accept_content_types: typing.Tuple[str] = _all_accept_content_types,
         stream: bool = False,
         timeout: typing.Optional[typing.Union[int, typing.Tuple]] = None,
@@ -83,6 +164,7 @@ class BaseApi(api_client.Api):
     @typing.overload
     def _cloud_service_get_list_oapg(
         self,
+        query_params: RequestQueryParams = frozendict.frozendict(),
         accept_content_types: typing.Tuple[str] = _all_accept_content_types,
         stream: bool = False,
         timeout: typing.Optional[typing.Union[int, typing.Tuple]] = None,
@@ -94,6 +176,7 @@ class BaseApi(api_client.Api):
 
     def _cloud_service_get_list_oapg(
         self,
+        query_params: RequestQueryParams = frozendict.frozendict(),
         accept_content_types: typing.Tuple[str] = _all_accept_content_types,
         stream: bool = False,
         timeout: typing.Optional[typing.Union[int, typing.Tuple]] = None,
@@ -104,7 +187,25 @@ class BaseApi(api_client.Api):
             api_response.body and api_response.headers will not be deserialized into schema
             class instances
         """
+        self._verify_typed_dict_inputs_oapg(RequestQueryParams, query_params)
         used_path = path.value
+
+        prefix_separator_iterator = None
+        for parameter in (
+            request_query_offset,
+            request_query_limit,
+            request_query_sort,
+            request_query_filter,
+            request_query_view,
+        ):
+            parameter_data = query_params.get(parameter.name, schemas.unset)
+            if parameter_data is schemas.unset:
+                continue
+            if prefix_separator_iterator is None:
+                prefix_separator_iterator = parameter.get_prefix_separator_iterator()
+            serialized_data = parameter.serialize(parameter_data, prefix_separator_iterator)
+            for serialized_value in serialized_data.values():
+                used_path += serialized_value
 
         _headers = HTTPHeaderDict()
         # TODO add cookie handling
@@ -142,6 +243,7 @@ class CloudServiceGetList(BaseApi):
     @typing.overload
     def cloud_service_get_list(
         self,
+        query_params: RequestQueryParams = frozendict.frozendict(),
         accept_content_types: typing.Tuple[str] = _all_accept_content_types,
         stream: bool = False,
         timeout: typing.Optional[typing.Union[int, typing.Tuple]] = None,
@@ -154,6 +256,7 @@ class CloudServiceGetList(BaseApi):
     def cloud_service_get_list(
         self,
         skip_deserialization: typing_extensions.Literal[True],
+        query_params: RequestQueryParams = frozendict.frozendict(),
         accept_content_types: typing.Tuple[str] = _all_accept_content_types,
         stream: bool = False,
         timeout: typing.Optional[typing.Union[int, typing.Tuple]] = None,
@@ -162,6 +265,7 @@ class CloudServiceGetList(BaseApi):
     @typing.overload
     def cloud_service_get_list(
         self,
+        query_params: RequestQueryParams = frozendict.frozendict(),
         accept_content_types: typing.Tuple[str] = _all_accept_content_types,
         stream: bool = False,
         timeout: typing.Optional[typing.Union[int, typing.Tuple]] = None,
@@ -173,12 +277,14 @@ class CloudServiceGetList(BaseApi):
 
     def cloud_service_get_list(
         self,
+        query_params: RequestQueryParams = frozendict.frozendict(),
         accept_content_types: typing.Tuple[str] = _all_accept_content_types,
         stream: bool = False,
         timeout: typing.Optional[typing.Union[int, typing.Tuple]] = None,
         skip_deserialization: bool = False,
     ):
         return self._cloud_service_get_list_oapg(
+            query_params=query_params,
             accept_content_types=accept_content_types,
             stream=stream,
             timeout=timeout,
@@ -192,6 +298,7 @@ class ApiForget(BaseApi):
     @typing.overload
     def get(
         self,
+        query_params: RequestQueryParams = frozendict.frozendict(),
         accept_content_types: typing.Tuple[str] = _all_accept_content_types,
         stream: bool = False,
         timeout: typing.Optional[typing.Union[int, typing.Tuple]] = None,
@@ -204,6 +311,7 @@ class ApiForget(BaseApi):
     def get(
         self,
         skip_deserialization: typing_extensions.Literal[True],
+        query_params: RequestQueryParams = frozendict.frozendict(),
         accept_content_types: typing.Tuple[str] = _all_accept_content_types,
         stream: bool = False,
         timeout: typing.Optional[typing.Union[int, typing.Tuple]] = None,
@@ -212,6 +320,7 @@ class ApiForget(BaseApi):
     @typing.overload
     def get(
         self,
+        query_params: RequestQueryParams = frozendict.frozendict(),
         accept_content_types: typing.Tuple[str] = _all_accept_content_types,
         stream: bool = False,
         timeout: typing.Optional[typing.Union[int, typing.Tuple]] = None,
@@ -223,12 +332,14 @@ class ApiForget(BaseApi):
 
     def get(
         self,
+        query_params: RequestQueryParams = frozendict.frozendict(),
         accept_content_types: typing.Tuple[str] = _all_accept_content_types,
         stream: bool = False,
         timeout: typing.Optional[typing.Union[int, typing.Tuple]] = None,
         skip_deserialization: bool = False,
     ):
         return self._cloud_service_get_list_oapg(
+            query_params=query_params,
             accept_content_types=accept_content_types,
             stream=stream,
             timeout=timeout,

@@ -7,6 +7,8 @@ Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**cdn_service_change_resource_domains**](#cdn_service_change_resource_domains) | **post** /v1/cloud/cdn/{service_id}/resource-domains | 
 [**cdn_service_change_setting**](#cdn_service_change_setting) | **post** /v1/cloud/cdn/{service_id}/setting | 
+[**cdn_service_get_iso3166_countries**](#cdn_service_get_iso3166_countries) | **get** /v1/cloud/cdn/iso3166-countries | 
+[**cdn_service_get_iso3166_regions**](#cdn_service_get_iso3166_regions) | **post** /v1/cloud/cdn/iso3166-regions | 
 [**cdn_service_get_price**](#cdn_service_get_price) | **get** /v1/cloud/cdn/price | 
 [**cdn_service_get_source_domains**](#cdn_service_get_source_domains) | **get** /v1/cloud/cdn/source-domains | 
 [**cdn_service_preload_cache_by_paths**](#cdn_service_preload_cache_by_paths) | **post** /v1/cloud/cdn/{service_id}/preload-cache-by-paths | 
@@ -178,6 +180,7 @@ with beget_openapi_cloud.ApiClient(configuration) as api_client:
             ),
             caching_time_browser=CdnSettingsCachingTimeBrowser(
                 enable=True,
+                type="SOURCE",
                 time=1,
             ),
             ignore_cookie=True,
@@ -321,6 +324,168 @@ headers | Unset | headers were not defined |
 Type | Description  | Notes
 ------------- | ------------- | -------------
 [**CdnChangeSettingResponse**](../../models/CdnChangeSettingResponse.md) |  | 
+
+
+### Authorization
+
+[bearerAuth](../../../README.md#bearerAuth)
+
+[[Back to top]](#__pageTop) [[Back to API list]](../../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../../README.md#documentation-for-models) [[Back to README]](../../../README.md)
+
+# **cdn_service_get_iso3166_countries**
+<a name="cdn_service_get_iso3166_countries"></a>
+> CdnGetCountriesResponse cdn_service_get_iso3166_countries()
+
+
+
+### Example
+
+* Bearer (JWT) Authentication (bearerAuth):
+```python
+import beget_openapi_cloud
+from beget_openapi_cloud.apis.tags import cdn_service_api
+from beget_openapi_cloud.model.cdn_get_countries_response import CdnGetCountriesResponse
+from pprint import pprint
+# Defining the host is optional and defaults to https://api.beget.com
+# See configuration.py for a list of all supported configuration parameters.
+configuration = beget_openapi_cloud.Configuration(
+    host = "https://api.beget.com"
+)
+
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure Bearer authorization (JWT): bearerAuth
+configuration = beget_openapi_cloud.Configuration(
+    access_token = 'YOUR_BEARER_TOKEN'
+)
+# Enter a context with an instance of the API client
+with beget_openapi_cloud.ApiClient(configuration) as api_client:
+    # Create an instance of the API class
+    api_instance = cdn_service_api.CdnServiceApi(api_client)
+
+    # example, this endpoint has no required or optional parameters
+    try:
+        api_response = api_instance.cdn_service_get_iso3166_countries()
+        pprint(api_response)
+    except beget_openapi_cloud.ApiException as e:
+        print("Exception when calling CdnServiceApi->cdn_service_get_iso3166_countries: %s\n" % e)
+```
+### Parameters
+This endpoint does not need any parameter.
+
+### Return Types, Responses
+
+Code | Class | Description
+------------- | ------------- | -------------
+n/a | api_client.ApiResponseWithoutDeserialization | When skip_deserialization is True this response is returned
+200 | [ApiResponseFor200](#cdn_service_get_iso3166_countries.ApiResponseFor200) | OK
+
+#### cdn_service_get_iso3166_countries.ApiResponseFor200
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+response | urllib3.HTTPResponse | Raw response |
+body | typing.Union[SchemaFor200ResponseBodyApplicationJson, ] |  |
+headers | Unset | headers were not defined |
+
+# SchemaFor200ResponseBodyApplicationJson
+Type | Description  | Notes
+------------- | ------------- | -------------
+[**CdnGetCountriesResponse**](../../models/CdnGetCountriesResponse.md) |  | 
+
+
+### Authorization
+
+[bearerAuth](../../../README.md#bearerAuth)
+
+[[Back to top]](#__pageTop) [[Back to API list]](../../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../../README.md#documentation-for-models) [[Back to README]](../../../README.md)
+
+# **cdn_service_get_iso3166_regions**
+<a name="cdn_service_get_iso3166_regions"></a>
+> CdnGetRegionsResponse cdn_service_get_iso3166_regions(cdn_get_regions_request)
+
+
+
+### Example
+
+* Bearer (JWT) Authentication (bearerAuth):
+```python
+import beget_openapi_cloud
+from beget_openapi_cloud.apis.tags import cdn_service_api
+from beget_openapi_cloud.model.cdn_get_regions_response import CdnGetRegionsResponse
+from beget_openapi_cloud.model.cdn_get_regions_request import CdnGetRegionsRequest
+from pprint import pprint
+# Defining the host is optional and defaults to https://api.beget.com
+# See configuration.py for a list of all supported configuration parameters.
+configuration = beget_openapi_cloud.Configuration(
+    host = "https://api.beget.com"
+)
+
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure Bearer authorization (JWT): bearerAuth
+configuration = beget_openapi_cloud.Configuration(
+    access_token = 'YOUR_BEARER_TOKEN'
+)
+# Enter a context with an instance of the API client
+with beget_openapi_cloud.ApiClient(configuration) as api_client:
+    # Create an instance of the API class
+    api_instance = cdn_service_api.CdnServiceApi(api_client)
+
+    # example passing only required values which don't have defaults set
+    body = CdnGetRegionsRequest(
+        country_code="country_code_example",
+    )
+    try:
+        api_response = api_instance.cdn_service_get_iso3166_regions(
+            body=body,
+        )
+        pprint(api_response)
+    except beget_openapi_cloud.ApiException as e:
+        print("Exception when calling CdnServiceApi->cdn_service_get_iso3166_regions: %s\n" % e)
+```
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+body | typing.Union[SchemaForRequestBodyApplicationJson] | required |
+content_type | str | optional, default is 'application/json' | Selects the schema and serialization of the request body
+accept_content_types | typing.Tuple[str] | default is ('application/json', ) | Tells the server the content type(s) that are accepted by the client
+stream | bool | default is False | if True then the response.content will be streamed and loaded from a file like object. When downloading a file, set this to True to force the code to deserialize the content to a FileSchema file
+timeout | typing.Optional[typing.Union[int, typing.Tuple]] | default is None | the timeout used by the rest client
+skip_deserialization | bool | default is False | when True, headers and body will be unset and an instance of api_client.ApiResponseWithoutDeserialization will be returned
+
+### body
+
+# SchemaForRequestBodyApplicationJson
+Type | Description  | Notes
+------------- | ------------- | -------------
+[**CdnGetRegionsRequest**](../../models/CdnGetRegionsRequest.md) |  | 
+
+
+### Return Types, Responses
+
+Code | Class | Description
+------------- | ------------- | -------------
+n/a | api_client.ApiResponseWithoutDeserialization | When skip_deserialization is True this response is returned
+200 | [ApiResponseFor200](#cdn_service_get_iso3166_regions.ApiResponseFor200) | OK
+
+#### cdn_service_get_iso3166_regions.ApiResponseFor200
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+response | urllib3.HTTPResponse | Raw response |
+body | typing.Union[SchemaFor200ResponseBodyApplicationJson, ] |  |
+headers | Unset | headers were not defined |
+
+# SchemaFor200ResponseBodyApplicationJson
+Type | Description  | Notes
+------------- | ------------- | -------------
+[**CdnGetRegionsResponse**](../../models/CdnGetRegionsResponse.md) |  | 
 
 
 ### Authorization
