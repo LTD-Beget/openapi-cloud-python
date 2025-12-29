@@ -49,6 +49,7 @@ from beget_openapi_cloud.apis.paths.v1_cloud_postgresql_service_id_statistic_net
 from beget_openapi_cloud.apis.paths.v1_cloud_projects import V1CloudProjects
 from beget_openapi_cloud.apis.paths.v1_cloud_projects_list import V1CloudProjectsList
 from beget_openapi_cloud.apis.paths.v1_cloud_projects_project_id import V1CloudProjectsProjectId
+from beget_openapi_cloud.apis.paths.v1_cloud_projects_project_id_pin import V1CloudProjectsProjectIdPin
 from beget_openapi_cloud.apis.paths.v1_cloud_s3_prefix import V1CloudS3Prefix
 from beget_openapi_cloud.apis.paths.v1_cloud_s3_price import V1CloudS3Price
 from beget_openapi_cloud.apis.paths.v1_cloud_s3_quota import V1CloudS3Quota
@@ -117,6 +118,7 @@ PathToApi = typing_extensions.TypedDict(
         PathValues.V1_CLOUD_PROJECTS: V1CloudProjects,
         PathValues.V1_CLOUD_PROJECTS_LIST: V1CloudProjectsList,
         PathValues.V1_CLOUD_PROJECTS_PROJECT_ID: V1CloudProjectsProjectId,
+        PathValues.V1_CLOUD_PROJECTS_PROJECT_ID_PIN: V1CloudProjectsProjectIdPin,
         PathValues.V1_CLOUD_S3_PREFIX: V1CloudS3Prefix,
         PathValues.V1_CLOUD_S3_PRICE: V1CloudS3Price,
         PathValues.V1_CLOUD_S3_QUOTA: V1CloudS3Quota,
@@ -186,6 +188,7 @@ path_to_api = PathToApi(
         PathValues.V1_CLOUD_PROJECTS: V1CloudProjects,
         PathValues.V1_CLOUD_PROJECTS_LIST: V1CloudProjectsList,
         PathValues.V1_CLOUD_PROJECTS_PROJECT_ID: V1CloudProjectsProjectId,
+        PathValues.V1_CLOUD_PROJECTS_PROJECT_ID_PIN: V1CloudProjectsProjectIdPin,
         PathValues.V1_CLOUD_S3_PREFIX: V1CloudS3Prefix,
         PathValues.V1_CLOUD_S3_PRICE: V1CloudS3Price,
         PathValues.V1_CLOUD_S3_QUOTA: V1CloudS3Quota,

@@ -33,6 +33,7 @@ from . import path
 OffsetSchema = schemas.IntSchema
 LimitSchema = schemas.IntSchema
 FilterSchema = schemas.StrSchema
+SortSchema = schemas.StrSchema
 RequestRequiredQueryParams = typing_extensions.TypedDict(
     'RequestRequiredQueryParams',
     {
@@ -44,6 +45,7 @@ RequestOptionalQueryParams = typing_extensions.TypedDict(
         'offset': typing.Union[OffsetSchema, decimal.Decimal, int, ],
         'limit': typing.Union[LimitSchema, decimal.Decimal, int, ],
         'filter': typing.Union[FilterSchema, str, ],
+        'sort': typing.Union[SortSchema, str, ],
     },
     total=False
 )
@@ -69,6 +71,12 @@ request_query_filter = api_client.QueryParameter(
     name="filter",
     style=api_client.ParameterStyle.FORM,
     schema=FilterSchema,
+    explode=True,
+)
+request_query_sort = api_client.QueryParameter(
+    name="sort",
+    style=api_client.ParameterStyle.FORM,
+    schema=SortSchema,
     explode=True,
 )
 _auth = [
@@ -158,6 +166,7 @@ class BaseApi(api_client.Api):
             request_query_offset,
             request_query_limit,
             request_query_filter,
+            request_query_sort,
         ):
             parameter_data = query_params.get(parameter.name, schemas.unset)
             if parameter_data is schemas.unset:

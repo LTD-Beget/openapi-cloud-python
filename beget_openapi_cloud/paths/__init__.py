@@ -54,6 +54,7 @@ class PathValues(str, enum.Enum):
     V1_CLOUD_PROJECTS = "/v1/cloud/projects"
     V1_CLOUD_PROJECTS_LIST = "/v1/cloud/projects/list"
     V1_CLOUD_PROJECTS_PROJECT_ID = "/v1/cloud/projects/{project_id}"
+    V1_CLOUD_PROJECTS_PROJECT_ID_PIN = "/v1/cloud/projects/{project_id}/pin"
     V1_CLOUD_S3_PREFIX = "/v1/cloud/s3/prefix"
     V1_CLOUD_S3_PRICE = "/v1/cloud/s3/price"
     V1_CLOUD_S3_QUOTA = "/v1/cloud/s3/quota"
