@@ -420,6 +420,7 @@ with beget_openapi_cloud.ApiClient(configuration) as api_client:
                 domain="domain_example",
                 source_service_display_name="source_service_display_name_example",
                 source_service_slug="source_service_slug_example",
+                source_protocol="HTTPS",
             ),
             settings=dict(),
         ),

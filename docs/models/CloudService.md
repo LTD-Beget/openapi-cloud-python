@@ -16,7 +16,7 @@ Key | Input Type | Accessed Type | Description | Notes
 **ui_pinned** | bool,  | BoolClass,  |  | [optional] 
 **ui_pin_changed_at** | str,  | str,  |  | [optional] 
 **status** | str,  | str,  |  | [optional] must be one of ["CREATING", "RUNNING", "RESTARTING", "STOPPED", "RECONFIGURING", "SUSPENDED", ] 
-**status_details** | str,  | str,  |  | [optional] must be one of ["_", "SUSPENDED_INSUFFICIENT_FUNDS", ] 
+**status_details** | str,  | str,  |  | [optional] must be one of ["_", "SUSPENDED_INSUFFICIENT_FUNDS", "SUSPENDED_SERVICE_MAINTENANCE", ] 
 **created_at** | str,  | str,  |  | [optional] 
 **price_day** | decimal.Decimal, int, float,  | decimal.Decimal,  |  | [optional] value must be a 64 bit float
 **price_month** | decimal.Decimal, int, float,  | decimal.Decimal,  |  | [optional] value must be a 64 bit float
