@@ -1,4 +1,4 @@
-<a name="__pageTop"></a>
+<a id="__pageTop"></a>
 # beget_openapi_cloud.apis.tags.s3_statistic_service_api.S3StatisticServiceApi
 
 All URIs are relative to *https://api.beget.com*
@@ -11,7 +11,7 @@ Method | HTTP request | Description
 [**s3_statistic_service_get_traffic**](#s3_statistic_service_get_traffic) | **get** /v1/cloud/s3/{service_id}/statistic/traffic-usage | 
 
 # **s3_statistic_service_get_network**
-<a name="s3_statistic_service_get_network"></a>
+<a id="s3_statistic_service_get_network"></a>
 > S3StatisticGetNetworkResponse s3_statistic_service_get_network(service_id)
 
 
@@ -142,7 +142,7 @@ Type | Description  | Notes
 [[Back to top]](#__pageTop) [[Back to API list]](../../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../../README.md#documentation-for-models) [[Back to README]](../../../README.md)
 
 # **s3_statistic_service_get_quota**
-<a name="s3_statistic_service_get_quota"></a>
+<a id="s3_statistic_service_get_quota"></a>
 > S3StatisticGetQuotaResponse s3_statistic_service_get_quota(service_id)
 
 
@@ -273,7 +273,7 @@ Type | Description  | Notes
 [[Back to top]](#__pageTop) [[Back to API list]](../../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../../README.md#documentation-for-models) [[Back to README]](../../../README.md)
 
 # **s3_statistic_service_get_request**
-<a name="s3_statistic_service_get_request"></a>
+<a id="s3_statistic_service_get_request"></a>
 > S3StatisticGetRequestResponse s3_statistic_service_get_request(service_id)
 
 
@@ -404,7 +404,7 @@ Type | Description  | Notes
 [[Back to top]](#__pageTop) [[Back to API list]](../../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../../README.md#documentation-for-models) [[Back to README]](../../../README.md)
 
 # **s3_statistic_service_get_traffic**
-<a name="s3_statistic_service_get_traffic"></a>
+<a id="s3_statistic_service_get_traffic"></a>
 > S3StatisticGetTrafficResponse s3_statistic_service_get_traffic(service_id)
 
 

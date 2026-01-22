@@ -1,4 +1,4 @@
-<a name="__pageTop"></a>
+<a id="__pageTop"></a>
 # beget_openapi_cloud.apis.tags.cdn_statistic_service_api.CdnStatisticServiceApi
 
 All URIs are relative to *https://api.beget.com*
@@ -10,7 +10,7 @@ Method | HTTP request | Description
 [**cdn_statistic_service_get_traffic**](#cdn_statistic_service_get_traffic) | **get** /v1/cloud/cdn/{service_id}/statistic/traffic-usage | 
 
 # **cdn_statistic_service_get_network**
-<a name="cdn_statistic_service_get_network"></a>
+<a id="cdn_statistic_service_get_network"></a>
 > CdnStatisticGetNetworkResponse cdn_statistic_service_get_network(service_id)
 
 
@@ -141,7 +141,7 @@ Type | Description  | Notes
 [[Back to top]](#__pageTop) [[Back to API list]](../../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../../README.md#documentation-for-models) [[Back to README]](../../../README.md)
 
 # **cdn_statistic_service_get_request**
-<a name="cdn_statistic_service_get_request"></a>
+<a id="cdn_statistic_service_get_request"></a>
 > CdnStatisticGetRequestResponse cdn_statistic_service_get_request(service_id)
 
 
@@ -272,7 +272,7 @@ Type | Description  | Notes
 [[Back to top]](#__pageTop) [[Back to API list]](../../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../../README.md#documentation-for-models) [[Back to README]](../../../README.md)
 
 # **cdn_statistic_service_get_traffic**
-<a name="cdn_statistic_service_get_traffic"></a>
+<a id="cdn_statistic_service_get_traffic"></a>
 > CdnStatisticGetTrafficResponse cdn_statistic_service_get_traffic(service_id)
 
 

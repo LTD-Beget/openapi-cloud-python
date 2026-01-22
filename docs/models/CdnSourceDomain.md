@@ -11,7 +11,7 @@ Key | Input Type | Accessed Type | Description | Notes
 **cdn_service_id** | str,  | str,  |  | [optional] 
 **source_service_id** | str,  | str,  |  | [optional] 
 **source_service_type** | str,  | str,  |  | [optional] must be one of ["DOMAIN", "S3", "VPS", ] 
-**items** | str,  | str,  |  | [optional] 
+**domain** | str,  | str,  |  | [optional] 
 **source_service_display_name** | str,  | str,  |  | [optional] 
 **source_service_slug** | str,  | str,  |  | [optional] 
 **source_protocol** | str,  | str,  |  | [optional] must be one of ["HTTPS", "HTTP", ] 

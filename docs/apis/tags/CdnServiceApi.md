@@ -1,4 +1,4 @@
-<a name="__pageTop"></a>
+<a id="__pageTop"></a>
 # beget_openapi_cloud.apis.tags.cdn_service_api.CdnServiceApi
 
 All URIs are relative to *https://api.beget.com*
@@ -16,7 +16,7 @@ Method | HTTP request | Description
 [**cdn_service_purge_cache_by_paths**](#cdn_service_purge_cache_by_paths) | **post** /v1/cloud/cdn/{service_id}/purge-cache-by-paths | 
 
 # **cdn_service_change_resource_domains**
-<a name="cdn_service_change_resource_domains"></a>
+<a id="cdn_service_change_resource_domains"></a>
 > CdnChangeResourceDomainsResponse cdn_service_change_resource_domains(service_idcdn_change_resource_domains_request)
 
 
@@ -130,7 +130,7 @@ Type | Description  | Notes
 [[Back to top]](#__pageTop) [[Back to API list]](../../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../../README.md#documentation-for-models) [[Back to README]](../../../README.md)
 
 # **cdn_service_change_setting**
-<a name="cdn_service_change_setting"></a>
+<a id="cdn_service_change_setting"></a>
 > CdnChangeSettingResponse cdn_service_change_setting(service_idcdn_change_setting_request)
 
 
@@ -333,7 +333,7 @@ Type | Description  | Notes
 [[Back to top]](#__pageTop) [[Back to API list]](../../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../../README.md#documentation-for-models) [[Back to README]](../../../README.md)
 
 # **cdn_service_get_iso3166_countries**
-<a name="cdn_service_get_iso3166_countries"></a>
+<a id="cdn_service_get_iso3166_countries"></a>
 > CdnGetCountriesResponse cdn_service_get_iso3166_countries()
 
 
@@ -403,7 +403,7 @@ Type | Description  | Notes
 [[Back to top]](#__pageTop) [[Back to API list]](../../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../../README.md#documentation-for-models) [[Back to README]](../../../README.md)
 
 # **cdn_service_get_iso3166_regions**
-<a name="cdn_service_get_iso3166_regions"></a>
+<a id="cdn_service_get_iso3166_regions"></a>
 > CdnGetRegionsResponse cdn_service_get_iso3166_regions(cdn_get_regions_request)
 
 
@@ -495,7 +495,7 @@ Type | Description  | Notes
 [[Back to top]](#__pageTop) [[Back to API list]](../../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../../README.md#documentation-for-models) [[Back to README]](../../../README.md)
 
 # **cdn_service_get_price**
-<a name="cdn_service_get_price"></a>
+<a id="cdn_service_get_price"></a>
 > CdnGetPriceResponse cdn_service_get_price()
 
 
@@ -565,7 +565,7 @@ Type | Description  | Notes
 [[Back to top]](#__pageTop) [[Back to API list]](../../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../../README.md#documentation-for-models) [[Back to README]](../../../README.md)
 
 # **cdn_service_get_source_domains**
-<a name="cdn_service_get_source_domains"></a>
+<a id="cdn_service_get_source_domains"></a>
 > CdnGetSourceDomainsResponse cdn_service_get_source_domains()
 
 
@@ -635,7 +635,7 @@ Type | Description  | Notes
 [[Back to top]](#__pageTop) [[Back to API list]](../../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../../README.md#documentation-for-models) [[Back to README]](../../../README.md)
 
 # **cdn_service_preload_cache_by_paths**
-<a name="cdn_service_preload_cache_by_paths"></a>
+<a id="cdn_service_preload_cache_by_paths"></a>
 > CdnPreloadCacheByPathsResponse cdn_service_preload_cache_by_paths(service_idcdn_preload_cache_by_paths_request)
 
 
@@ -749,7 +749,7 @@ Type | Description  | Notes
 [[Back to top]](#__pageTop) [[Back to API list]](../../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../../README.md#documentation-for-models) [[Back to README]](../../../README.md)
 
 # **cdn_service_purge_all_cache**
-<a name="cdn_service_purge_all_cache"></a>
+<a id="cdn_service_purge_all_cache"></a>
 > CdnPurgeAllCacheResponse cdn_service_purge_all_cache(service_id)
 
 
@@ -845,7 +845,7 @@ Type | Description  | Notes
 [[Back to top]](#__pageTop) [[Back to API list]](../../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../../README.md#documentation-for-models) [[Back to README]](../../../README.md)
 
 # **cdn_service_purge_cache_by_paths**
-<a name="cdn_service_purge_cache_by_paths"></a>
+<a id="cdn_service_purge_cache_by_paths"></a>
 > CdnPurgeCacheByPathsResponse cdn_service_purge_cache_by_paths(service_idcdn_purge_cache_by_paths_request)
 
 

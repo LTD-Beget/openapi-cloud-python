@@ -1,4 +1,4 @@
-<a name="__pageTop"></a>
+<a id="__pageTop"></a>
 # beget_openapi_cloud.apis.tags.mysql_service_api.MysqlServiceApi
 
 All URIs are relative to *https://api.beget.com*
@@ -16,7 +16,7 @@ Method | HTTP request | Description
 [**mysql_service_update_db**](#mysql_service_update_db) | **patch** /v1/cloud/mysql/{service_id}/db/{db_name} | 
 
 # **mysql_service_change_access_password**
-<a name="mysql_service_change_access_password"></a>
+<a id="mysql_service_change_access_password"></a>
 > MysqlChangeAccessPasswordResponse mysql_service_change_access_password(service_iddb_namehostmysql_change_access_password_request)
 
 
@@ -149,7 +149,7 @@ Type | Description  | Notes
 [[Back to top]](#__pageTop) [[Back to API list]](../../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../../README.md#documentation-for-models) [[Back to README]](../../../README.md)
 
 # **mysql_service_create_access**
-<a name="mysql_service_create_access"></a>
+<a id="mysql_service_create_access"></a>
 > MysqlCreateAccessResponse mysql_service_create_access(service_iddb_namemysql_create_access_request)
 
 
@@ -273,7 +273,7 @@ Type | Description  | Notes
 [[Back to top]](#__pageTop) [[Back to API list]](../../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../../README.md#documentation-for-models) [[Back to README]](../../../README.md)
 
 # **mysql_service_create_db**
-<a name="mysql_service_create_db"></a>
+<a id="mysql_service_create_db"></a>
 > MysqlCreateDbResponse mysql_service_create_db(service_idmysql_create_db_request)
 
 
@@ -388,7 +388,7 @@ Type | Description  | Notes
 [[Back to top]](#__pageTop) [[Back to API list]](../../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../../README.md#documentation-for-models) [[Back to README]](../../../README.md)
 
 # **mysql_service_get_config**
-<a name="mysql_service_get_config"></a>
+<a id="mysql_service_get_config"></a>
 > MysqlGetConfigResponse mysql_service_get_config(service_id)
 
 
@@ -484,7 +484,7 @@ Type | Description  | Notes
 [[Back to top]](#__pageTop) [[Back to API list]](../../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../../README.md#documentation-for-models) [[Back to README]](../../../README.md)
 
 # **mysql_service_get_db_list**
-<a name="mysql_service_get_db_list"></a>
+<a id="mysql_service_get_db_list"></a>
 > MysqlGetDbListResponse mysql_service_get_db_list(service_id)
 
 
@@ -580,7 +580,7 @@ Type | Description  | Notes
 [[Back to top]](#__pageTop) [[Back to API list]](../../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../../README.md#documentation-for-models) [[Back to README]](../../../README.md)
 
 # **mysql_service_remove_access**
-<a name="mysql_service_remove_access"></a>
+<a id="mysql_service_remove_access"></a>
 > MysqlRemoveAccessResponse mysql_service_remove_access(service_iddb_namehost)
 
 
@@ -694,7 +694,7 @@ Type | Description  | Notes
 [[Back to top]](#__pageTop) [[Back to API list]](../../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../../README.md#documentation-for-models) [[Back to README]](../../../README.md)
 
 # **mysql_service_remove_db**
-<a name="mysql_service_remove_db"></a>
+<a id="mysql_service_remove_db"></a>
 > MysqlRemoveDbResponse mysql_service_remove_db(service_iddb_name)
 
 
@@ -799,7 +799,7 @@ Type | Description  | Notes
 [[Back to top]](#__pageTop) [[Back to API list]](../../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../../README.md#documentation-for-models) [[Back to README]](../../../README.md)
 
 # **mysql_service_set_config**
-<a name="mysql_service_set_config"></a>
+<a id="mysql_service_set_config"></a>
 > MysqlSetConfigResponse mysql_service_set_config(service_idmysql_set_config_request)
 
 
@@ -913,7 +913,7 @@ Type | Description  | Notes
 [[Back to top]](#__pageTop) [[Back to API list]](../../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../../README.md#documentation-for-models) [[Back to README]](../../../README.md)
 
 # **mysql_service_update_db**
-<a name="mysql_service_update_db"></a>
+<a id="mysql_service_update_db"></a>
 > MysqlUpdateDbResponse mysql_service_update_db(service_iddb_namemysql_update_db_request)
 
 

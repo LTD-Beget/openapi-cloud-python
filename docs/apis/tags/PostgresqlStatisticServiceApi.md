@@ -1,4 +1,4 @@
-<a name="__pageTop"></a>
+<a id="__pageTop"></a>
 # beget_openapi_cloud.apis.tags.postgresql_statistic_service_api.PostgresqlStatisticServiceApi
 
 All URIs are relative to *https://api.beget.com*
@@ -14,7 +14,7 @@ Method | HTTP request | Description
 [**postgresql_statistic_service_get_network**](#postgresql_statistic_service_get_network) | **get** /v1/cloud/postgresql/{service_id}/statistic/network | 
 
 # **postgresql_statistic_service_get_cpu**
-<a name="postgresql_statistic_service_get_cpu"></a>
+<a id="postgresql_statistic_service_get_cpu"></a>
 > PostgresqlStatisticGetCpuResponse postgresql_statistic_service_get_cpu(service_id)
 
 
@@ -145,7 +145,7 @@ Type | Description  | Notes
 [[Back to top]](#__pageTop) [[Back to API list]](../../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../../README.md#documentation-for-models) [[Back to README]](../../../README.md)
 
 # **postgresql_statistic_service_get_cpu_details**
-<a name="postgresql_statistic_service_get_cpu_details"></a>
+<a id="postgresql_statistic_service_get_cpu_details"></a>
 > PostgresqlStatisticGetCpuDetailsResponse postgresql_statistic_service_get_cpu_details(service_id)
 
 
@@ -276,7 +276,7 @@ Type | Description  | Notes
 [[Back to top]](#__pageTop) [[Back to API list]](../../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../../README.md#documentation-for-models) [[Back to README]](../../../README.md)
 
 # **postgresql_statistic_service_get_disk**
-<a name="postgresql_statistic_service_get_disk"></a>
+<a id="postgresql_statistic_service_get_disk"></a>
 > PostgresqlStatisticGetDiskResponse postgresql_statistic_service_get_disk(service_id)
 
 
@@ -407,7 +407,7 @@ Type | Description  | Notes
 [[Back to top]](#__pageTop) [[Back to API list]](../../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../../README.md#documentation-for-models) [[Back to README]](../../../README.md)
 
 # **postgresql_statistic_service_get_disk_usage**
-<a name="postgresql_statistic_service_get_disk_usage"></a>
+<a id="postgresql_statistic_service_get_disk_usage"></a>
 > PostgresqlStatisticGetDiskUsageResponse postgresql_statistic_service_get_disk_usage(service_id)
 
 
@@ -538,7 +538,7 @@ Type | Description  | Notes
 [[Back to top]](#__pageTop) [[Back to API list]](../../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../../README.md#documentation-for-models) [[Back to README]](../../../README.md)
 
 # **postgresql_statistic_service_get_load_average**
-<a name="postgresql_statistic_service_get_load_average"></a>
+<a id="postgresql_statistic_service_get_load_average"></a>
 > PostgresqlStatisticGetLoadAverageResponse postgresql_statistic_service_get_load_average(service_id)
 
 
@@ -669,7 +669,7 @@ Type | Description  | Notes
 [[Back to top]](#__pageTop) [[Back to API list]](../../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../../README.md#documentation-for-models) [[Back to README]](../../../README.md)
 
 # **postgresql_statistic_service_get_memory**
-<a name="postgresql_statistic_service_get_memory"></a>
+<a id="postgresql_statistic_service_get_memory"></a>
 > PostgresqlStatisticGetMemoryResponse postgresql_statistic_service_get_memory(service_id)
 
 
@@ -800,7 +800,7 @@ Type | Description  | Notes
 [[Back to top]](#__pageTop) [[Back to API list]](../../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../../README.md#documentation-for-models) [[Back to README]](../../../README.md)
 
 # **postgresql_statistic_service_get_network**
-<a name="postgresql_statistic_service_get_network"></a>
+<a id="postgresql_statistic_service_get_network"></a>
 > PostgresqlStatisticGetNetworkResponse postgresql_statistic_service_get_network(service_id)
 
 

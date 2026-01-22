@@ -1,4 +1,4 @@
-<a name="__pageTop"></a>
+<a id="__pageTop"></a>
 # beget_openapi_cloud.apis.tags.cloud_service_api.CloudServiceApi
 
 All URIs are relative to *https://api.beget.com*
@@ -16,7 +16,7 @@ Method | HTTP request | Description
 [**cloud_service_update**](#cloud_service_update) | **patch** /v1/cloud/{service_id} | 
 
 # **cloud_service_bind_project**
-<a name="cloud_service_bind_project"></a>
+<a id="cloud_service_bind_project"></a>
 > CloudBindProjectResponse cloud_service_bind_project(service_idcloud_bind_project_request)
 
 
@@ -128,7 +128,7 @@ Type | Description  | Notes
 [[Back to top]](#__pageTop) [[Back to API list]](../../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../../README.md#documentation-for-models) [[Back to README]](../../../README.md)
 
 # **cloud_service_change_configuration**
-<a name="cloud_service_change_configuration"></a>
+<a id="cloud_service_change_configuration"></a>
 > CloudChangeConfigurationResponse cloud_service_change_configuration(service_idcloud_change_configuration_request)
 
 
@@ -240,7 +240,7 @@ Type | Description  | Notes
 [[Back to top]](#__pageTop) [[Back to API list]](../../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../../README.md#documentation-for-models) [[Back to README]](../../../README.md)
 
 # **cloud_service_change_pinned**
-<a name="cloud_service_change_pinned"></a>
+<a id="cloud_service_change_pinned"></a>
 > CloudChangePinnedResponse cloud_service_change_pinned(service_idcloud_change_pinned_request)
 
 
@@ -352,7 +352,7 @@ Type | Description  | Notes
 [[Back to top]](#__pageTop) [[Back to API list]](../../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../../README.md#documentation-for-models) [[Back to README]](../../../README.md)
 
 # **cloud_service_create**
-<a name="cloud_service_create"></a>
+<a id="cloud_service_create"></a>
 > CloudCreateResponse cloud_service_create(cloud_create_request)
 
 
@@ -483,7 +483,7 @@ Type | Description  | Notes
 [[Back to top]](#__pageTop) [[Back to API list]](../../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../../README.md#documentation-for-models) [[Back to README]](../../../README.md)
 
 # **cloud_service_get**
-<a name="cloud_service_get"></a>
+<a id="cloud_service_get"></a>
 > CloudGetResponse cloud_service_get(service_id)
 
 
@@ -579,7 +579,7 @@ Type | Description  | Notes
 [[Back to top]](#__pageTop) [[Back to API list]](../../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../../README.md#documentation-for-models) [[Back to README]](../../../README.md)
 
 # **cloud_service_get_configuration_list**
-<a name="cloud_service_get_configuration_list"></a>
+<a id="cloud_service_get_configuration_list"></a>
 > CloudGetConfigurationListResponse cloud_service_get_configuration_list()
 
 
@@ -649,7 +649,7 @@ Type | Description  | Notes
 [[Back to top]](#__pageTop) [[Back to API list]](../../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../../README.md#documentation-for-models) [[Back to README]](../../../README.md)
 
 # **cloud_service_get_list**
-<a name="cloud_service_get_list"></a>
+<a id="cloud_service_get_list"></a>
 > CloudGetListResponse cloud_service_get_list()
 
 
@@ -782,7 +782,7 @@ Type | Description  | Notes
 [[Back to top]](#__pageTop) [[Back to API list]](../../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../../README.md#documentation-for-models) [[Back to README]](../../../README.md)
 
 # **cloud_service_remove**
-<a name="cloud_service_remove"></a>
+<a id="cloud_service_remove"></a>
 > CloudRemoveResponse cloud_service_remove(service_id)
 
 
@@ -878,7 +878,7 @@ Type | Description  | Notes
 [[Back to top]](#__pageTop) [[Back to API list]](../../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../../README.md#documentation-for-models) [[Back to README]](../../../README.md)
 
 # **cloud_service_update**
-<a name="cloud_service_update"></a>
+<a id="cloud_service_update"></a>
 > CloudUpdateResponse cloud_service_update(service_idcloud_update_request)
 
 

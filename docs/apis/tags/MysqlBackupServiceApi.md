@@ -1,4 +1,4 @@
-<a name="__pageTop"></a>
+<a id="__pageTop"></a>
 # beget_openapi_cloud.apis.tags.mysql_backup_service_api.MysqlBackupServiceApi
 
 All URIs are relative to *https://api.beget.com*
@@ -10,7 +10,7 @@ Method | HTTP request | Description
 [**mysql_backup_service_restore**](#mysql_backup_service_restore) | **post** /v1/cloud/mysql/backup/{copy_id} | 
 
 # **mysql_backup_service_get_list**
-<a name="mysql_backup_service_get_list"></a>
+<a id="mysql_backup_service_get_list"></a>
 > MysqlBackupGetListResponse mysql_backup_service_get_list()
 
 
@@ -107,7 +107,7 @@ Type | Description  | Notes
 [[Back to top]](#__pageTop) [[Back to API list]](../../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../../README.md#documentation-for-models) [[Back to README]](../../../README.md)
 
 # **mysql_backup_service_get_orders**
-<a name="mysql_backup_service_get_orders"></a>
+<a id="mysql_backup_service_get_orders"></a>
 > MysqlBackupGetOrdersResponse mysql_backup_service_get_orders()
 
 
@@ -213,7 +213,7 @@ Type | Description  | Notes
 [[Back to top]](#__pageTop) [[Back to API list]](../../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../../README.md#documentation-for-models) [[Back to README]](../../../README.md)
 
 # **mysql_backup_service_restore**
-<a name="mysql_backup_service_restore"></a>
+<a id="mysql_backup_service_restore"></a>
 > MysqlBackupRestoreResponse mysql_backup_service_restore(copy_idmysql_backup_restore_request)
 
 

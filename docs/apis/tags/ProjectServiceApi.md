@@ -1,4 +1,4 @@
-<a name="__pageTop"></a>
+<a id="__pageTop"></a>
 # beget_openapi_cloud.apis.tags.project_service_api.ProjectServiceApi
 
 All URIs are relative to *https://api.beget.com*
@@ -12,7 +12,7 @@ Method | HTTP request | Description
 [**project_service_update**](#project_service_update) | **put** /v1/cloud/projects/{project_id} | 
 
 # **project_service_change_pinned**
-<a name="project_service_change_pinned"></a>
+<a id="project_service_change_pinned"></a>
 > ProjectChangePinnedResponse project_service_change_pinned(project_idproject_change_pinned_request)
 
 
@@ -124,7 +124,7 @@ Type | Description  | Notes
 [[Back to top]](#__pageTop) [[Back to API list]](../../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../../README.md#documentation-for-models) [[Back to README]](../../../README.md)
 
 # **project_service_create**
-<a name="project_service_create"></a>
+<a id="project_service_create"></a>
 > ProjectCreateProjectResponse project_service_create(project_create_project_request)
 
 
@@ -217,7 +217,7 @@ Type | Description  | Notes
 [[Back to top]](#__pageTop) [[Back to API list]](../../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../../README.md#documentation-for-models) [[Back to README]](../../../README.md)
 
 # **project_service_get_list**
-<a name="project_service_get_list"></a>
+<a id="project_service_get_list"></a>
 > ProjectGetProjectListResponse project_service_get_list()
 
 
@@ -341,7 +341,7 @@ Type | Description  | Notes
 [[Back to top]](#__pageTop) [[Back to API list]](../../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../../README.md#documentation-for-models) [[Back to README]](../../../README.md)
 
 # **project_service_remove**
-<a name="project_service_remove"></a>
+<a id="project_service_remove"></a>
 > ProjectRemoveProjectResponse project_service_remove(project_id)
 
 
@@ -437,7 +437,7 @@ Type | Description  | Notes
 [[Back to top]](#__pageTop) [[Back to API list]](../../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../../README.md#documentation-for-models) [[Back to README]](../../../README.md)
 
 # **project_service_update**
-<a name="project_service_update"></a>
+<a id="project_service_update"></a>
 > ProjectUpdateProjectResponse project_service_update(project_idproject_update_project_request)
 
 

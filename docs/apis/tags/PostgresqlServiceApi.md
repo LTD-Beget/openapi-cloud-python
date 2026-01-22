@@ -1,4 +1,4 @@
-<a name="__pageTop"></a>
+<a id="__pageTop"></a>
 # beget_openapi_cloud.apis.tags.postgresql_service_api.PostgresqlServiceApi
 
 All URIs are relative to *https://api.beget.com*
@@ -19,7 +19,7 @@ Method | HTTP request | Description
 [**postgresql_service_update_role**](#postgresql_service_update_role) | **patch** /v1/cloud/postgresql/{service_id}/role/{role_name} | 
 
 # **postgresql_service_create_db**
-<a name="postgresql_service_create_db"></a>
+<a id="postgresql_service_create_db"></a>
 > PostgresqlPgCreateDbResponse postgresql_service_create_db(service_idpostgresql_pg_create_db_request)
 
 
@@ -133,7 +133,7 @@ Type | Description  | Notes
 [[Back to top]](#__pageTop) [[Back to API list]](../../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../../README.md#documentation-for-models) [[Back to README]](../../../README.md)
 
 # **postgresql_service_create_role**
-<a name="postgresql_service_create_role"></a>
+<a id="postgresql_service_create_role"></a>
 > PostgresqlPgCreateRoleResponse postgresql_service_create_role(service_idpostgresql_pg_create_role_request)
 
 
@@ -249,7 +249,7 @@ Type | Description  | Notes
 [[Back to top]](#__pageTop) [[Back to API list]](../../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../../README.md#documentation-for-models) [[Back to README]](../../../README.md)
 
 # **postgresql_service_get_config**
-<a name="postgresql_service_get_config"></a>
+<a id="postgresql_service_get_config"></a>
 > PostgresqlPgGetConfigResponse postgresql_service_get_config(service_id)
 
 
@@ -345,7 +345,7 @@ Type | Description  | Notes
 [[Back to top]](#__pageTop) [[Back to API list]](../../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../../README.md#documentation-for-models) [[Back to README]](../../../README.md)
 
 # **postgresql_service_get_db_list**
-<a name="postgresql_service_get_db_list"></a>
+<a id="postgresql_service_get_db_list"></a>
 > PostgresqlPgGetDbListResponse postgresql_service_get_db_list(service_id)
 
 
@@ -441,7 +441,7 @@ Type | Description  | Notes
 [[Back to top]](#__pageTop) [[Back to API list]](../../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../../README.md#documentation-for-models) [[Back to README]](../../../README.md)
 
 # **postgresql_service_get_remote_access**
-<a name="postgresql_service_get_remote_access"></a>
+<a id="postgresql_service_get_remote_access"></a>
 > PostgresqlPgGetRemoteAccessResponse postgresql_service_get_remote_access(service_id)
 
 
@@ -537,7 +537,7 @@ Type | Description  | Notes
 [[Back to top]](#__pageTop) [[Back to API list]](../../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../../README.md#documentation-for-models) [[Back to README]](../../../README.md)
 
 # **postgresql_service_get_role_list**
-<a name="postgresql_service_get_role_list"></a>
+<a id="postgresql_service_get_role_list"></a>
 > PostgresqlPgGetRoleListResponse postgresql_service_get_role_list(service_id)
 
 
@@ -633,7 +633,7 @@ Type | Description  | Notes
 [[Back to top]](#__pageTop) [[Back to API list]](../../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../../README.md#documentation-for-models) [[Back to README]](../../../README.md)
 
 # **postgresql_service_remove_db**
-<a name="postgresql_service_remove_db"></a>
+<a id="postgresql_service_remove_db"></a>
 > PostgresqlPgRemoveDbResponse postgresql_service_remove_db(service_iddb_name)
 
 
@@ -738,7 +738,7 @@ Type | Description  | Notes
 [[Back to top]](#__pageTop) [[Back to API list]](../../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../../README.md#documentation-for-models) [[Back to README]](../../../README.md)
 
 # **postgresql_service_remove_role**
-<a name="postgresql_service_remove_role"></a>
+<a id="postgresql_service_remove_role"></a>
 > PostgresqlPgRemoveRoleResponse postgresql_service_remove_role(service_idrole_name)
 
 
@@ -843,7 +843,7 @@ Type | Description  | Notes
 [[Back to top]](#__pageTop) [[Back to API list]](../../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../../README.md#documentation-for-models) [[Back to README]](../../../README.md)
 
 # **postgresql_service_set_config**
-<a name="postgresql_service_set_config"></a>
+<a id="postgresql_service_set_config"></a>
 > PostgresqlPgSetConfigResponse postgresql_service_set_config(service_idpostgresql_pg_set_config_request)
 
 
@@ -957,7 +957,7 @@ Type | Description  | Notes
 [[Back to top]](#__pageTop) [[Back to API list]](../../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../../README.md#documentation-for-models) [[Back to README]](../../../README.md)
 
 # **postgresql_service_update_db**
-<a name="postgresql_service_update_db"></a>
+<a id="postgresql_service_update_db"></a>
 > PostgresqlPgUpdateDbResponse postgresql_service_update_db(service_iddb_namepostgresql_pg_update_db_request)
 
 
@@ -1079,7 +1079,7 @@ Type | Description  | Notes
 [[Back to top]](#__pageTop) [[Back to API list]](../../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../../README.md#documentation-for-models) [[Back to README]](../../../README.md)
 
 # **postgresql_service_update_remote_access**
-<a name="postgresql_service_update_remote_access"></a>
+<a id="postgresql_service_update_remote_access"></a>
 > PostgresqlPgUpdateRemoteAccessResponse postgresql_service_update_remote_access(service_idpostgresql_pg_update_remote_access_request)
 
 
@@ -1193,7 +1193,7 @@ Type | Description  | Notes
 [[Back to top]](#__pageTop) [[Back to API list]](../../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../../README.md#documentation-for-models) [[Back to README]](../../../README.md)
 
 # **postgresql_service_update_role**
-<a name="postgresql_service_update_role"></a>
+<a id="postgresql_service_update_role"></a>
 > PostgresqlPgUpdateRoleResponse postgresql_service_update_role(service_idrole_namepostgresql_pg_update_role_request)
 
 

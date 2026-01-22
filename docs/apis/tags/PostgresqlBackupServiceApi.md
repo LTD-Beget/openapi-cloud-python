@@ -1,4 +1,4 @@
-<a name="__pageTop"></a>
+<a id="__pageTop"></a>
 # beget_openapi_cloud.apis.tags.postgresql_backup_service_api.PostgresqlBackupServiceApi
 
 All URIs are relative to *https://api.beget.com*
@@ -10,7 +10,7 @@ Method | HTTP request | Description
 [**postgresql_backup_service_restore**](#postgresql_backup_service_restore) | **post** /v1/cloud/postgresql/backup/{copy_id} | 
 
 # **postgresql_backup_service_get_list**
-<a name="postgresql_backup_service_get_list"></a>
+<a id="postgresql_backup_service_get_list"></a>
 > PostgresqlBackupGetListResponse postgresql_backup_service_get_list()
 
 
@@ -107,7 +107,7 @@ Type | Description  | Notes
 [[Back to top]](#__pageTop) [[Back to API list]](../../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../../README.md#documentation-for-models) [[Back to README]](../../../README.md)
 
 # **postgresql_backup_service_get_orders**
-<a name="postgresql_backup_service_get_orders"></a>
+<a id="postgresql_backup_service_get_orders"></a>
 > PostgresqlBackupGetOrdersResponse postgresql_backup_service_get_orders()
 
 
@@ -213,7 +213,7 @@ Type | Description  | Notes
 [[Back to top]](#__pageTop) [[Back to API list]](../../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../../README.md#documentation-for-models) [[Back to README]](../../../README.md)
 
 # **postgresql_backup_service_restore**
-<a name="postgresql_backup_service_restore"></a>
+<a id="postgresql_backup_service_restore"></a>
 > PostgresqlBackupRestoreResponse postgresql_backup_service_restore(copy_idpostgresql_backup_restore_request)
 
 

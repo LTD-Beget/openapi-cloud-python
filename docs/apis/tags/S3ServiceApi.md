@@ -1,4 +1,4 @@
-<a name="__pageTop"></a>
+<a id="__pageTop"></a>
 # beget_openapi_cloud.apis.tags.s3_service_api.S3ServiceApi
 
 All URIs are relative to *https://api.beget.com*
@@ -15,7 +15,7 @@ Method | HTTP request | Description
 [**s3_service_get_quota**](#s3_service_get_quota) | **get** /v1/cloud/s3/quota | 
 
 # **s3_service_change_access_key**
-<a name="s3_service_change_access_key"></a>
+<a id="s3_service_change_access_key"></a>
 > S3ChangeAccessKeyResponse s3_service_change_access_key(service_ids3_change_access_key_request)
 
 
@@ -126,7 +126,7 @@ Type | Description  | Notes
 [[Back to top]](#__pageTop) [[Back to API list]](../../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../../README.md#documentation-for-models) [[Back to README]](../../../README.md)
 
 # **s3_service_change_cors**
-<a name="s3_service_change_cors"></a>
+<a id="s3_service_change_cors"></a>
 > S3ChangeCorsResponse s3_service_change_cors(service_ids3_change_cors_request)
 
 
@@ -249,7 +249,7 @@ Type | Description  | Notes
 [[Back to top]](#__pageTop) [[Back to API list]](../../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../../README.md#documentation-for-models) [[Back to README]](../../../README.md)
 
 # **s3_service_change_domain**
-<a name="s3_service_change_domain"></a>
+<a id="s3_service_change_domain"></a>
 > S3ChangeDomainResponse s3_service_change_domain(service_ids3_change_domain_request)
 
 
@@ -361,7 +361,7 @@ Type | Description  | Notes
 [[Back to top]](#__pageTop) [[Back to API list]](../../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../../README.md#documentation-for-models) [[Back to README]](../../../README.md)
 
 # **s3_service_change_public**
-<a name="s3_service_change_public"></a>
+<a id="s3_service_change_public"></a>
 > S3ChangePublicResponse s3_service_change_public(service_ids3_change_public_request)
 
 
@@ -473,7 +473,7 @@ Type | Description  | Notes
 [[Back to top]](#__pageTop) [[Back to API list]](../../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../../README.md#documentation-for-models) [[Back to README]](../../../README.md)
 
 # **s3_service_enable_ftp**
-<a name="s3_service_enable_ftp"></a>
+<a id="s3_service_enable_ftp"></a>
 > S3EnableFtpResponse s3_service_enable_ftp(service_ids3_enable_ftp_request)
 
 
@@ -585,7 +585,7 @@ Type | Description  | Notes
 [[Back to top]](#__pageTop) [[Back to API list]](../../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../../README.md#documentation-for-models) [[Back to README]](../../../README.md)
 
 # **s3_service_get_prefix**
-<a name="s3_service_get_prefix"></a>
+<a id="s3_service_get_prefix"></a>
 > S3GetPrefixResponse s3_service_get_prefix()
 
 
@@ -655,7 +655,7 @@ Type | Description  | Notes
 [[Back to top]](#__pageTop) [[Back to API list]](../../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../../README.md#documentation-for-models) [[Back to README]](../../../README.md)
 
 # **s3_service_get_price**
-<a name="s3_service_get_price"></a>
+<a id="s3_service_get_price"></a>
 > S3GetPriceResponse s3_service_get_price()
 
 
@@ -725,7 +725,7 @@ Type | Description  | Notes
 [[Back to top]](#__pageTop) [[Back to API list]](../../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../../README.md#documentation-for-models) [[Back to README]](../../../README.md)
 
 # **s3_service_get_quota**
-<a name="s3_service_get_quota"></a>
+<a id="s3_service_get_quota"></a>
 > S3GetQuotaResponse s3_service_get_quota()
 
 

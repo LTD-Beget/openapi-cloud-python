@@ -1,4 +1,4 @@
-<a name="__pageTop"></a>
+<a id="__pageTop"></a>
 # beget_openapi_cloud.apis.tags.mysql_statistic_service_api.MysqlStatisticServiceApi
 
 All URIs are relative to *https://api.beget.com*
@@ -14,7 +14,7 @@ Method | HTTP request | Description
 [**mysql_statistic_service_get_network**](#mysql_statistic_service_get_network) | **get** /v1/cloud/mysql/{service_id}/statistic/network | 
 
 # **mysql_statistic_service_get_cpu**
-<a name="mysql_statistic_service_get_cpu"></a>
+<a id="mysql_statistic_service_get_cpu"></a>
 > MysqlStatisticGetCpuResponse mysql_statistic_service_get_cpu(service_id)
 
 
@@ -145,7 +145,7 @@ Type | Description  | Notes
 [[Back to top]](#__pageTop) [[Back to API list]](../../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../../README.md#documentation-for-models) [[Back to README]](../../../README.md)
 
 # **mysql_statistic_service_get_cpu_details**
-<a name="mysql_statistic_service_get_cpu_details"></a>
+<a id="mysql_statistic_service_get_cpu_details"></a>
 > MysqlStatisticGetCpuDetailsResponse mysql_statistic_service_get_cpu_details(service_id)
 
 
@@ -276,7 +276,7 @@ Type | Description  | Notes
 [[Back to top]](#__pageTop) [[Back to API list]](../../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../../README.md#documentation-for-models) [[Back to README]](../../../README.md)
 
 # **mysql_statistic_service_get_disk**
-<a name="mysql_statistic_service_get_disk"></a>
+<a id="mysql_statistic_service_get_disk"></a>
 > MysqlStatisticGetDiskResponse mysql_statistic_service_get_disk(service_id)
 
 
@@ -407,7 +407,7 @@ Type | Description  | Notes
 [[Back to top]](#__pageTop) [[Back to API list]](../../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../../README.md#documentation-for-models) [[Back to README]](../../../README.md)
 
 # **mysql_statistic_service_get_disk_usage**
-<a name="mysql_statistic_service_get_disk_usage"></a>
+<a id="mysql_statistic_service_get_disk_usage"></a>
 > MysqlStatisticGetDiskUsageResponse mysql_statistic_service_get_disk_usage(service_id)
 
 
@@ -538,7 +538,7 @@ Type | Description  | Notes
 [[Back to top]](#__pageTop) [[Back to API list]](../../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../../README.md#documentation-for-models) [[Back to README]](../../../README.md)
 
 # **mysql_statistic_service_get_load_average**
-<a name="mysql_statistic_service_get_load_average"></a>
+<a id="mysql_statistic_service_get_load_average"></a>
 > MysqlStatisticGetLoadAverageResponse mysql_statistic_service_get_load_average(service_id)
 
 
@@ -669,7 +669,7 @@ Type | Description  | Notes
 [[Back to top]](#__pageTop) [[Back to API list]](../../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../../README.md#documentation-for-models) [[Back to README]](../../../README.md)
 
 # **mysql_statistic_service_get_memory**
-<a name="mysql_statistic_service_get_memory"></a>
+<a id="mysql_statistic_service_get_memory"></a>
 > MysqlStatisticGetMemoryResponse mysql_statistic_service_get_memory(service_id)
 
 
@@ -800,7 +800,7 @@ Type | Description  | Notes
 [[Back to top]](#__pageTop) [[Back to API list]](../../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../../README.md#documentation-for-models) [[Back to README]](../../../README.md)
 
 # **mysql_statistic_service_get_network**
-<a name="mysql_statistic_service_get_network"></a>
+<a id="mysql_statistic_service_get_network"></a>
 > MysqlStatisticGetNetworkResponse mysql_statistic_service_get_network(service_id)
 
 
