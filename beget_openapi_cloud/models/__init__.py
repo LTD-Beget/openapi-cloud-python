@@ -216,6 +216,7 @@ from beget_openapi_cloud.model.s3_get_price_response import S3GetPriceResponse
 from beget_openapi_cloud.model.s3_get_price_response_bucket import S3GetPriceResponseBucket
 from beget_openapi_cloud.model.s3_get_quota_response import S3GetQuotaResponse
 from beget_openapi_cloud.model.s3_s3 import S3S3
+from beget_openapi_cloud.model.s3_s3_cdn import S3S3Cdn
 from beget_openapi_cloud.model.s3_s3_configuration import S3S3Configuration
 from beget_openapi_cloud.model.s3_s3_create_error import S3S3CreateError
 from beget_openapi_cloud.model.s3_s3_create_params import S3S3CreateParams

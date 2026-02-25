@@ -281,6 +281,8 @@ with beget_openapi_cloud.ApiClient(configuration) as api_client:
     body = CloudChangePinnedRequest(
         service_id="service_id_example",
         ui_pinned=True,
+        after_rank="after_rank_example",
+        before_rank="before_rank_example",
     )
     try:
         api_response = api_instance.cloud_service_change_pinned(
@@ -428,6 +430,8 @@ with beget_openapi_cloud.ApiClient(configuration) as api_client:
         region="region_example",
         project_id="project_id_example",
         ui_pinned=True,
+        ui_pinned_after_rank="ui_pinned_after_rank_example",
+        ui_pinned_before_rank="ui_pinned_before_rank_example",
     )
     try:
         api_response = api_instance.cloud_service_create(

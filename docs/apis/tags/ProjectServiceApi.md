@@ -53,6 +53,8 @@ with beget_openapi_cloud.ApiClient(configuration) as api_client:
     body = ProjectChangePinnedRequest(
         project_id="project_id_example",
         ui_pinned=True,
+        after_rank="after_rank_example",
+        before_rank="before_rank_example",
     )
     try:
         api_response = api_instance.project_service_change_pinned(
