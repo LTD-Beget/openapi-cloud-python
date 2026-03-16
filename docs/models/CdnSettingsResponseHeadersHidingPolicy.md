@@ -9,11 +9,10 @@ dict, frozendict.frozendict,  | frozendict.frozendict,  |  |
 Key | Input Type | Accessed Type | Description | Notes
 ------------ | ------------- | ------------- | ------------- | -------------
 **enabled** | bool,  | BoolClass,  |  | [optional] 
-**[excepted](#excepted)** | list, tuple,  | tuple,  |  | [optional] 
-**mode** | str,  | str,  |  | [optional] must be one of ["HIDE", "SHOW", ] 
+**[header](#header)** | list, tuple,  | tuple,  |  | [optional] 
 **any_string_name** | dict, frozendict.frozendict, str, date, datetime, int, float, bool, decimal.Decimal, None, list, tuple, bytes, io.FileIO, io.BufferedReader | frozendict.frozendict, str, BoolClass, decimal.Decimal, NoneClass, tuple, bytes, FileIO | any string name can be used but the value must be the correct type | [optional]
 
-# excepted
+# header
 
 ## Model Type Info
 Input Type | Accessed Type | Description | Notes

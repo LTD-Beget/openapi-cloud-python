@@ -174,13 +174,9 @@ with beget_openapi_cloud.ApiClient(configuration) as api_client:
             caching_time=1,
             follow_origin_redirect=CdnSettingsFollowOriginRedirect(
                 enable=True,
-                code=[
-                    "HTTP_301"
-                ],
             ),
             caching_time_browser=CdnSettingsCachingTimeBrowser(
                 enable=True,
-                type="SOURCE",
                 time=1,
             ),
             ignore_cookie=True,
@@ -191,33 +187,7 @@ with beget_openapi_cloud.ApiClient(configuration) as api_client:
                     "HTTP_403"
                 ],
             ),
-            geo_acl=CdnSettingsGeoAcl(
-                enable=True,
-                policy_type="ALLOW",
-                excepted_values=dict(
-                    "key": CdnSettingsGeoAclStringArray(
-                        values=[
-                            "values_example"
-                        ],
-                    ),
-                ),
-            ),
-            referer_acl=CdnSettingsRefererAcl(
-                enable=True,
-                policy_type="ALLOW",
-,
-            ),
-            ip_address_acl=CdnSettingsIpAddressAcl(
-                enable=True,
-                policy_type="ALLOW",
-,
-            ),
             redirect_http_to_https=True,
-            user_agent_acl=CdnSettingsUserAgentAcl(
-                enable=True,
-                policy_type="ALLOW",
-,
-            ),
             tokenized_url_secure_key=CdnSettingsTokenizedUrlSecureKey(
                 enable=True,
                 key="key_example",
@@ -230,10 +200,7 @@ with beget_openapi_cloud.ApiClient(configuration) as api_client:
                 ],
             ),
             http3_enabled=True,
-            gzip_compression=CdnSettingsGzipCompression(
-                enable=True,
-,
-            ),
+            gzip_compression=CdnSettingsGzipCompression(),
             content_slice=True,
             static_request_headers=CdnSettingsStaticRequestHeaders(
                 enabled=True,
@@ -243,7 +210,9 @@ with beget_openapi_cloud.ApiClient(configuration) as api_client:
             ),
             cors=CdnSettingsCors(
                 enabled=True,
-,
+                value=[
+                    "value_example"
+                ],
                 always=True,
             ),
             static_response_headers=CdnSettingsStaticResponseHeader(
@@ -252,14 +221,12 @@ with beget_openapi_cloud.ApiClient(configuration) as api_client:
                     CdnSettingsStaticResponseHeaderHeader(
                         name="name_example",
 ,
-                        always=True,
                     )
                 ],
             ),
             response_headers_hiding_policy=CdnSettingsResponseHeadersHidingPolicy(
                 enabled=True,
 ,
-                mode="HIDE",
             ),
         ),
     )
