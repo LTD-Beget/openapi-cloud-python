@@ -193,6 +193,7 @@ with beget_openapi_cloud.ApiClient(configuration) as api_client:
                 key="key_example",
                 include_ip=True,
             ),
+            is_allowed_http_methods_locked=True,
             allowed_http_methods=CdnSettingsAllowedHttpMethods(
                 enable=True,
                 http_method=[

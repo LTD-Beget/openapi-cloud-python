@@ -30,6 +30,12 @@ from beget_openapi_cloud.apis.paths.v1_cloud_mysql_service_id_statistic_disk_usa
 from beget_openapi_cloud.apis.paths.v1_cloud_mysql_service_id_statistic_load_average import V1CloudMysqlServiceIdStatisticLoadAverage
 from beget_openapi_cloud.apis.paths.v1_cloud_mysql_service_id_statistic_memory import V1CloudMysqlServiceIdStatisticMemory
 from beget_openapi_cloud.apis.paths.v1_cloud_mysql_service_id_statistic_network import V1CloudMysqlServiceIdStatisticNetwork
+from beget_openapi_cloud.apis.paths.v1_cloud_network_drive_limits import V1CloudNetworkDriveLimits
+from beget_openapi_cloud.apis.paths.v1_cloud_network_drive_mounts import V1CloudNetworkDriveMounts
+from beget_openapi_cloud.apis.paths.v1_cloud_network_drive_price import V1CloudNetworkDrivePrice
+from beget_openapi_cloud.apis.paths.v1_cloud_network_drive_service_id_mount import V1CloudNetworkDriveServiceIdMount
+from beget_openapi_cloud.apis.paths.v1_cloud_network_drive_service_id_resize import V1CloudNetworkDriveServiceIdResize
+from beget_openapi_cloud.apis.paths.v1_cloud_network_drive_service_id_unmount import V1CloudNetworkDriveServiceIdUnmount
 from beget_openapi_cloud.apis.paths.v1_cloud_postgresql_backup import V1CloudPostgresqlBackup
 from beget_openapi_cloud.apis.paths.v1_cloud_postgresql_backup_orders import V1CloudPostgresqlBackupOrders
 from beget_openapi_cloud.apis.paths.v1_cloud_postgresql_backup_copy_id import V1CloudPostgresqlBackupCopyId
@@ -99,6 +105,12 @@ PathToApi = typing_extensions.TypedDict(
         PathValues.V1_CLOUD_MYSQL_SERVICE_ID_STATISTIC_LOADAVERAGE: V1CloudMysqlServiceIdStatisticLoadAverage,
         PathValues.V1_CLOUD_MYSQL_SERVICE_ID_STATISTIC_MEMORY: V1CloudMysqlServiceIdStatisticMemory,
         PathValues.V1_CLOUD_MYSQL_SERVICE_ID_STATISTIC_NETWORK: V1CloudMysqlServiceIdStatisticNetwork,
+        PathValues.V1_CLOUD_NETWORKDRIVE_LIMITS: V1CloudNetworkDriveLimits,
+        PathValues.V1_CLOUD_NETWORKDRIVE_MOUNTS: V1CloudNetworkDriveMounts,
+        PathValues.V1_CLOUD_NETWORKDRIVE_PRICE: V1CloudNetworkDrivePrice,
+        PathValues.V1_CLOUD_NETWORKDRIVE_SERVICE_ID_MOUNT: V1CloudNetworkDriveServiceIdMount,
+        PathValues.V1_CLOUD_NETWORKDRIVE_SERVICE_ID_RESIZE: V1CloudNetworkDriveServiceIdResize,
+        PathValues.V1_CLOUD_NETWORKDRIVE_SERVICE_ID_UNMOUNT: V1CloudNetworkDriveServiceIdUnmount,
         PathValues.V1_CLOUD_POSTGRESQL_BACKUP: V1CloudPostgresqlBackup,
         PathValues.V1_CLOUD_POSTGRESQL_BACKUP_ORDERS: V1CloudPostgresqlBackupOrders,
         PathValues.V1_CLOUD_POSTGRESQL_BACKUP_COPY_ID: V1CloudPostgresqlBackupCopyId,
@@ -169,6 +181,12 @@ path_to_api = PathToApi(
         PathValues.V1_CLOUD_MYSQL_SERVICE_ID_STATISTIC_LOADAVERAGE: V1CloudMysqlServiceIdStatisticLoadAverage,
         PathValues.V1_CLOUD_MYSQL_SERVICE_ID_STATISTIC_MEMORY: V1CloudMysqlServiceIdStatisticMemory,
         PathValues.V1_CLOUD_MYSQL_SERVICE_ID_STATISTIC_NETWORK: V1CloudMysqlServiceIdStatisticNetwork,
+        PathValues.V1_CLOUD_NETWORKDRIVE_LIMITS: V1CloudNetworkDriveLimits,
+        PathValues.V1_CLOUD_NETWORKDRIVE_MOUNTS: V1CloudNetworkDriveMounts,
+        PathValues.V1_CLOUD_NETWORKDRIVE_PRICE: V1CloudNetworkDrivePrice,
+        PathValues.V1_CLOUD_NETWORKDRIVE_SERVICE_ID_MOUNT: V1CloudNetworkDriveServiceIdMount,
+        PathValues.V1_CLOUD_NETWORKDRIVE_SERVICE_ID_RESIZE: V1CloudNetworkDriveServiceIdResize,
+        PathValues.V1_CLOUD_NETWORKDRIVE_SERVICE_ID_UNMOUNT: V1CloudNetworkDriveServiceIdUnmount,
         PathValues.V1_CLOUD_POSTGRESQL_BACKUP: V1CloudPostgresqlBackup,
         PathValues.V1_CLOUD_POSTGRESQL_BACKUP_ORDERS: V1CloudPostgresqlBackupOrders,
         PathValues.V1_CLOUD_POSTGRESQL_BACKUP_COPY_ID: V1CloudPostgresqlBackupCopyId,

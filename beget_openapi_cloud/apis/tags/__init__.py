@@ -12,6 +12,7 @@ class TagValues(str, enum.Enum):
     MYSQL_BACKUP_SERVICE = "MysqlBackupService"
     MYSQL_SERVICE = "MysqlService"
     MYSQL_STATISTIC_SERVICE = "MysqlStatisticService"
+    NETWORK_DRIVE_SERVICE = "NetworkDriveService"
     POSTGRESQL_BACKUP_SERVICE = "PostgresqlBackupService"
     POSTGRESQL_SERVICE = "PostgresqlService"
     POSTGRESQL_STATISTIC_SERVICE = "PostgresqlStatisticService"

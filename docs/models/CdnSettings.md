@@ -16,6 +16,7 @@ Key | Input Type | Accessed Type | Description | Notes
 **stale** | [**CdnSettingsStale**](CdnSettingsStale.md) | [**CdnSettingsStale**](CdnSettingsStale.md) |  | [optional] 
 **redirect_http_to_https** | bool,  | BoolClass,  |  | [optional] 
 **tokenized_url_secure_key** | [**CdnSettingsTokenizedUrlSecureKey**](CdnSettingsTokenizedUrlSecureKey.md) | [**CdnSettingsTokenizedUrlSecureKey**](CdnSettingsTokenizedUrlSecureKey.md) |  | [optional] 
+**is_allowed_http_methods_locked** | bool,  | BoolClass,  |  | [optional] 
 **allowed_http_methods** | [**CdnSettingsAllowedHttpMethods**](CdnSettingsAllowedHttpMethods.md) | [**CdnSettingsAllowedHttpMethods**](CdnSettingsAllowedHttpMethods.md) |  | [optional] 
 **http3_enabled** | bool,  | BoolClass,  |  | [optional] 
 **gzip_compression** | [**CdnSettingsGzipCompression**](CdnSettingsGzipCompression.md) | [**CdnSettingsGzipCompression**](CdnSettingsGzipCompression.md) |  | [optional] 

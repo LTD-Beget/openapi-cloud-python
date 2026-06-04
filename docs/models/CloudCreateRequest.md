@@ -15,6 +15,7 @@ Key | Input Type | Accessed Type | Description | Notes
 **postgresql_params** | [**PostgresqlPgCreateParams**](PostgresqlPgCreateParams.md) | [**PostgresqlPgCreateParams**](PostgresqlPgCreateParams.md) |  | [optional] 
 **s3_params** | [**S3S3CreateParams**](S3S3CreateParams.md) | [**S3S3CreateParams**](S3S3CreateParams.md) |  | [optional] 
 **cdn_params** | [**CdnCdnCreateParams**](CdnCdnCreateParams.md) | [**CdnCdnCreateParams**](CdnCdnCreateParams.md) |  | [optional] 
+**network_drive_params** | [**NetworkDriveNetworkDriveCreateParams**](NetworkDriveNetworkDriveCreateParams.md) | [**NetworkDriveNetworkDriveCreateParams**](NetworkDriveNetworkDriveCreateParams.md) |  | [optional] 
 **extra** | str,  | str,  |  | [optional] 
 **region** | str,  | str,  |  | [optional] 
 **project_id** | str,  | str,  |  | [optional] 

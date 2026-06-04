@@ -432,6 +432,9 @@ with beget_openapi_cloud.ApiClient(configuration) as api_client:
                 source_protocol="HTTPS",
             ),
         ),
+        network_drive_params=NetworkDriveNetworkDriveCreateParams(
+            size=1,
+        ),
         extra="extra_example",
         region="region_example",
         project_id="project_id_example",
