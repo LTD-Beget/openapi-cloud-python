@@ -12,6 +12,7 @@
 # sys.setrecursionlimit(n)
 
 from beget_openapi_cloud.model.cdn_cdn import CdnCdn
+from beget_openapi_cloud.model.cdn_cdn_configuration import CdnCdnConfiguration
 from beget_openapi_cloud.model.cdn_cdn_create_error import CdnCdnCreateError
 from beget_openapi_cloud.model.cdn_cdn_create_error_domain_error import CdnCdnCreateErrorDomainError
 from beget_openapi_cloud.model.cdn_cdn_create_error_domain_error_domain_already_used_details import CdnCdnCreateErrorDomainErrorDomainAlreadyUsedDetails

@@ -10,6 +10,10 @@ Key | Input Type | Accessed Type | Description | Notes
 ------------ | ------------- | ------------- | ------------- | -------------
 **[cdn](#cdn)** | list, tuple,  | tuple,  |  | [optional] 
 **required_topup_amount** | decimal.Decimal, int, float,  | decimal.Decimal,  |  | [optional] value must be a 64 bit float
+**free_request_count** | str,  | str,  |  | [optional] 
+**request_count** | str,  | str,  |  | [optional] 
+**billable_request_count** | str,  | str,  |  | [optional] 
+**request_cost** | decimal.Decimal, int, float,  | decimal.Decimal,  |  | [optional] value must be a 64 bit float
 **any_string_name** | dict, frozendict.frozendict, str, date, datetime, int, float, bool, decimal.Decimal, None, list, tuple, bytes, io.FileIO, io.BufferedReader | frozendict.frozendict, str, BoolClass, decimal.Decimal, NoneClass, tuple, bytes, FileIO | any string name can be used but the value must be the correct type | [optional]
 
 # cdn
